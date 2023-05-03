@@ -48,8 +48,8 @@
 	<div class="recent-data">
 		<div class="symptoms">
 			<div class="symptoms-text">
-				<p>標題</p>
-				<p>症狀</p>
+				<p class="info-loading" style="--width:40%;"></p>
+				<p class="info-loading" style="--width:70$;"></p>
 			</div>
 			<div class="symptoms-preview">
 				<div class="symptoms-icon"></div>
@@ -153,7 +153,8 @@
 	}
 	.symptoms-text {
 		width: 70%;
-		background: lightblue;
+		padding: 0 1em;
+		/* background: lightblue; */
 		/* display: inline-block; */
 		vertical-align: middle;
 		object-fit: contain;
@@ -167,21 +168,22 @@
 		/* background: lightgreen; */
 		width:30%;
 		display: inline-block;
-		/* verical center */
-		vertical-align: middle;
-		/* horizental right */
-		background: lightcoral;
+		display: flex;
+		justify-content: right;
+		align-items: center;
+		/* background: lightcoral; */
 	}
 	.symptoms-icon {
-		--size: 2rem;
+		--size: 2.5rem;
 		width: var(--size);
 		height: var(--size);
 		border-radius: 50%;
 		background: #d9d9d9;
+		transform: translateX(-1em);
 
 		object-fit: contain;
 	}
-	/* .info-loading::before{
+	.info-loading::before{
 		--height: 1rem;
 		content: "";
 		display: flex;
@@ -189,8 +191,9 @@
 		width: var(--width);
 		height: var(--height);
 		border-radius: calc(var(--height) / 2);
-		background: #d9d9d9;
+		background: #4d4d4d;
 	}
+	/* 
 	.symptoms-text{
 		display: flex;
 		flex-direction: column;
@@ -208,7 +211,8 @@
 		border-radius: 50%;
 	} */
 	.corner {
-		width: 6em;
+		/* width: 6em; */
+		height:100;
 		padding-bottom: 1em;
 	}
 	.corner a {
