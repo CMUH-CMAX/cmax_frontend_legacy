@@ -1,24 +1,27 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
 </script>
 
 <header>
 	<nav id="menu">
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<div class="circle"></div>
-				<a href="/">首頁</a>
+				<a href="/">
+					<div class="circle"></div>
+					首頁
+				</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/search' ? 'page' : undefined}>
-				<div class="circle"></div>
-				<a href="/search">搜尋</a>
+				<a href="/search">
+					<div class="circle"></div>
+					搜尋
+				</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/profile') ? 'page' : undefined}>
-				<!-- a circle element -->
-				<div class="circle"></div>
-				<a href="/profile">我的</a>
+			<li aria-current={$page.url.pathname.startsWith('/about') ? 'page' : undefined}>
+				<a href="/about">
+					<div class="circle"></div>
+					我的
+				</a>
 			</li>
 		</ul>
 	</nav>
@@ -27,7 +30,7 @@
 <style>
 	/* set background variable in the root */
 	:root {
-		--background: #d9d9d9;
+		--background: ;
 		--menu-circle: #fafafa;
 	}
 
@@ -38,12 +41,12 @@
 		left: 50%;
 		transform: translateX(-50%);
 		width: 100%;
-		background: var(--background);
+		background: var(--theme-main);
 		/* background-size: contain;
 		display: flex;
 		justify-content: center;
 		align-items: center; */
-		border-top: 1px solid #515151;
+		border-top: 1px solid var(--theme-dark-80);
 	}
 
 	#menu > ul {
@@ -55,7 +58,6 @@
 		justify-content: center;
 		align-items: center;
 		list-style: none;
-		background: var(--background);
 		background-size: contain;
 		top: 1rem;
 	} 
@@ -65,33 +67,19 @@
 		width: calc(100% / 3);
 		text-align: center;
 	}
-	/* #menu > ul > li[aria-current='page']::before { */
+	#menu > ul > li[aria-current='page'] .circle {
+		background: var(--theme-main-60);
+	}
 
 	#menu > ul > li::before {
-		/* --size: 12px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size)); */
-
-		/* left: calc(30% - var(--size)); */
-		/* border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1); */
 	}
 	#menu > ul > li > a {
-		/* control the position */
 		position: relative;
-		/* very small font */
 		font-size: 0.7rem;
-		/* default color: black */
 		color: #000000;
 	}
 	.circle {
 		position: relative;
-		/* top: -1.5em; */
-		/* set variable for the size */
 		--size: 2rem;
 		left: calc(50% - var(--size)/2);
 		width: var(--size);
@@ -103,92 +91,3 @@
 		text-decoration: none;
 	}
 </style>
-<!-- <style>
-	header {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
-	}
-
-	nav {
-		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
-	}
-
-	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		list-style: none;
-		background: var(--background);
-		background-size: contain;
-	}
-
-	li {
-		position: relative;
-		height: 100%;
-	}
-
-	li[aria-current='page']::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
-	}
-
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 0.5rem;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear;
-	}
-
-	a:hover {
-		color: var(--color-theme-1);
-	}
-</style> -->

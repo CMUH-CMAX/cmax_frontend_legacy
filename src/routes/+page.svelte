@@ -3,228 +3,117 @@
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 	import bell from '$lib/images/bell.svg';
-	// set a variable name
+	import { Bell } from 'svelte-heros-v2';
+
+	// set a variable name, future will get it from API.
 	let lastname = "殊樵";
 </script>
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="CMAX" />
 </svelte:head>
 
-<!-- this need to seprate into different file -->
-<div class="greetings function-block">
-	<div class="w-100 flex-block">
-		<div class="greeting_message">
-			<h2>
-				<span>嗨，<span class="lastname">{lastname}</span>！</span>
-				<br>
-				<span>今天過得好嗎？</span>
-			</h2>
-		</div>
-		<div class="notification-icon">
-			<a href="/notification">
-				<img width="100%" height="auto" src="{bell}" alt="notification icon" />
-			</a>
-		</div>
+<div class="content-slot mx-auto grid grid-cols-4 gap-4 content-around p-4">
+	<div class="col-span-3">
+		<p class="text-xl">嗨，<span class="lastname font-semibold">{lastname}</span>！</p>
+		<p class="text-xl">今天過得好嗎？</p>
 	</div>
-	<div class="quick-search-btn">
-		<span>尋找最適合你的中醫及診所</span>
-	</div>
-</div>
-
-<div class="thematic-break"></div>
-
-<div class="recent function-block">
-	<div class="flex-block w-100">
-		<div class="corner">
-			<!-- <a href=""></a> -->
-			近期常見症狀
-		</div>
-		<div class="corner">
-			<a href="">查看更多</a>
-		</div>
-	</div>
-	<div class="recent-data">
-		<div class="symptoms">
-			<div class="symptoms-text">
-				<p class="info-loading" style="--width:40%;"></p>
-				<p class="info-loading" style="--width:70$;"></p>
+	<div>
+		<div class="notification flex justify-center items-center">
+			<div class="notification-btn flex justify-center items-center rounded-full">
+				<Bell variation="solid" size="20" />
 			</div>
-			<div class="symptoms-preview">
-				<div class="symptoms-icon"></div>
-			</div>
+		</div>
+	</div>
+	<div class="col-span-4">
+		<div class="quick-search-btn p-2 rounded-lg text-center">
+			尋找最適合你的中醫及診所
 		</div>
 	</div>
 </div>
 
-<!-- <section> -->
-	<!-- <h1>The app here	</h1> -->
+<div class="m-2"></div>
 
-	<!-- <Counter /> -->
-<!-- </section> -->
+<div class="content-slot mx-auto grid p-4">
+	<div class="grid grid-cols-4 gap-4 pb-2">
+		<p class="col-span-3 text-sm">最近常見症狀</p>
+		<p class="text-sm font-bold">查看更多</p>
+	</div>
+
+	<div class="recent shadow rounded-md p-4 max-w-sm w-full mx-auto">
+		<div class="animate-pulse flex space-x-4">
+			<div class="flex-1 space-y-6 py-1">
+				<div class="space-y-3">
+					<div class="grid grid-cols-3 gap-4">
+						<div class="h-2 bg-slate-700 rounded col-span-2"></div>
+					</div>
+					<div class="h-2 bg-slate-700 rounded"></div>
+				</div>
+			</div>
+			<div class="rounded-full bg-slate-700 h-10 w-10"></div>
+		</div>
+	</div>
+</div>
+
+<div class="m-2"></div>
+
+<div class="content-piece mx-auto">
+	<div class="grid grid-cols-4 gap-4 text-center p-4 m-1">
+		<div class="grid justify-center">
+			<div class="box box-border md:box-content"></div>
+			<p class="text-xs">症狀列別</p>
+		</div>
+		<div class="grid justify-center">
+			<div class="box box-border md:box-content"></div>
+			<p class="text-xs">症狀檢查器</p>
+		</div>
+		<div class="grid justify-center">
+			<div class="box box-border md:box-content"></div>
+			<p class="text-xs">診所地圖</p>
+		</div>
+		<div class="grid justify-center">
+			<div class="box box-border md:box-content"></div>
+			<p class="text-xs">許願池</p>
+		</div>
+	</div>
+</div>
 
 <style>
-	.function-block {
-		padding: 1rem;
-		background: #d9d9d9;
+	.content-slot {
+		width:100%;
+		color: var(--theme-dark);
+		background: var(--theme-main-80);
 	}
 
-	.greetings { }
-	.greeting_message {
-		width:100%;
-		font-weight:bold;
-	}
-	.greeting_message .lastname {
-		font-weight:900;
-	}
-	h2 {
-		font-size: 1.3rem;
-	}
-	.w-100 {
-		width:100%;
-	}
-	.flex-block {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.notification-icon {
-		width: 2rem;
-		height: 2rem;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-		border: 1px solid white;
-		border-radius: 50%;
-		background: white;
-	}
-	.notification-icon img {
-		width: 100%;
-		height: 80%;
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
+	.content-piece {
+		min-width: 80%;
+		color: var(--theme-dark);
+		background: var(--theme-main-80);
 	}
 
 	.quick-search-btn {
-		--bg-theme: #f5f5f5;
-		--bg-hover: #e5e5e5;
-		--bg-active: #d5d5d5;
-		width: 100%;
-		height: 3rem;
-		background: var(--bg-theme);
-		border-radius: 0.5rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		color: var(--theme-dark);
+		background: var(--theme-main-20);
 	}
 
-	.quick-search-btn > span {
-		font-size: 1.2rem;
+	.notification {
+		width: 100%;
+		height:100%;
 	}
-	.quick-search-btn:hover {
-		background: var(--bg-hover);
-	}
-	.quick-search-btn:active {
-		background: var(--bg-active);
+	.notification-btn {
+		width: 2rem;
+		height: 2rem;
+		background: var(--theme-main-20);
 	}
 
-	.thematic-break {
-		width: 100%;
-		height: 10px;
-		/* background: blue; */
+	.recent {
+		color: var(--theme-dark);
+		background: var(--theme-main-20);
 	}
-
-	.recent { /* recent symptoms */
-		display: block;
-		justify-content: space-between;
-		font-size: 0.75rem;
-	}
-	.recent-data {
-		--bg-color: white;
-		width: 100%;
-		background: var(--bg-color);
-	}
-	.symptoms {
-		display: flex;
-		/* display: inline; */
-		/* padding: 0.5em 0rem; */
-	}
-	.symptoms-text {
-		width: 70%;
-		padding: 0 1em;
-		/* background: lightblue; */
-		/* display: inline-block; */
-		vertical-align: middle;
-		object-fit: contain;
-	}
-	.symptoms-text > p {
-		line-height: 0.5rem;
-		font-size: 1rem;
-	}
-	.symptoms-preview {
-		
-		/* background: lightgreen; */
-		width:30%;
-		display: inline-block;
-		display: flex;
-		justify-content: right;
-		align-items: center;
-		/* background: lightcoral; */
-	}
-	.symptoms-icon {
-		--size: 2.5rem;
-		width: var(--size);
-		height: var(--size);
-		border-radius: 50%;
-		background: #d9d9d9;
-		transform: translateX(-1em);
-
-		object-fit: contain;
-	}
-	.info-loading::before{
-		--height: 1rem;
-		content: "";
-		display: flex;
-		margin-bottom: 10px;
-		width: var(--width);
-		height: var(--height);
-		border-radius: calc(var(--height) / 2);
-		background: #4d4d4d;
-	}
-	/* 
-	.symptoms-text{
-		display: flex;
-		flex-direction: column;
-		width: 60%;
-	}
-	.symptoms-preview {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		padding: 0 1rem;
-		background: #f5f5f5;
-		width:50px;
-		height:50px;
-		border-radius: 50%;
-	} */
-	.corner {
-		/* width: 6em; */
-		height:100;
-		padding-bottom: 1em;
-	}
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-	.corner img {
-		width: 2em;
-		/* height: 2em; */
-		object-fit: contain;
+	.box {
+		width: 4em;
+		height: 4em;
+		background: var(--theme-main-20);
 	}
 </style>

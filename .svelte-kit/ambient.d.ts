@@ -63,6 +63,7 @@ declare module '$env/static/private' {
 	export const SSH_AUTH_SOCK: string;
 	export const __CF_USER_TEXT_ENCODING: string;
 	export const npm_package_devDependencies_eslint: string;
+	export const npm_package_devDependencies_postcss: string;
 	export const npm_package_devDependencies__typescript_eslint_eslint_plugin: string;
 	export const npm_package_devDependencies_tslib: string;
 	export const npm_execpath: string;
@@ -77,7 +78,9 @@ declare module '$env/static/private' {
 	export const CONDA_PREFIX: string;
 	export const __CFBundleIdentifier: string;
 	export const PWD: string;
+	export const npm_package_devDependencies_tailwindcss: string;
 	export const npm_package_scripts_preview: string;
+	export const npm_package_devDependencies_svelte_heros_v2: string;
 	export const P9K_SSH: string;
 	export const npm_lifecycle_event: string;
 	export const P9K_TTY: string;
@@ -92,6 +95,7 @@ declare module '$env/static/private' {
 	export const XPC_SERVICE_NAME: string;
 	export const npm_package_version: string;
 	export const npm_package_devDependencies__sveltejs_adapter_auto: string;
+	export const npm_package_devDependencies_autoprefixer: string;
 	export const npm_package_devDependencies_svelte_check: string;
 	export const PYENV_SHELL: string;
 	export const SHLVL: string;
@@ -186,6 +190,7 @@ declare module '$env/dynamic/private' {
 		SSH_AUTH_SOCK: string;
 		__CF_USER_TEXT_ENCODING: string;
 		npm_package_devDependencies_eslint: string;
+		npm_package_devDependencies_postcss: string;
 		npm_package_devDependencies__typescript_eslint_eslint_plugin: string;
 		npm_package_devDependencies_tslib: string;
 		npm_execpath: string;
@@ -200,7 +205,9 @@ declare module '$env/dynamic/private' {
 		CONDA_PREFIX: string;
 		__CFBundleIdentifier: string;
 		PWD: string;
+		npm_package_devDependencies_tailwindcss: string;
 		npm_package_scripts_preview: string;
+		npm_package_devDependencies_svelte_heros_v2: string;
 		P9K_SSH: string;
 		npm_lifecycle_event: string;
 		P9K_TTY: string;
@@ -215,6 +222,7 @@ declare module '$env/dynamic/private' {
 		XPC_SERVICE_NAME: string;
 		npm_package_version: string;
 		npm_package_devDependencies__sveltejs_adapter_auto: string;
+		npm_package_devDependencies_autoprefixer: string;
 		npm_package_devDependencies_svelte_check: string;
 		PYENV_SHELL: string;
 		SHLVL: string;

@@ -3,6 +3,14 @@
 	import './styles.css';
 </script>
 
+<svelte:head>
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+	<!-- Google fonts end -->
+</svelte:head>
+
 <div class="app">
 	<Header />
 
@@ -11,15 +19,17 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>ZoneTwelve ;-P</p>
 	</footer>
 </div>
 
 <style>
+
 	.app {
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		/* background: var(--theme-main-20); */
 	}
 
 	main {
