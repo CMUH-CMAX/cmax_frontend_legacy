@@ -5,40 +5,105 @@
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
-	</div>
-
-	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
+	<nav id="menu">
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
+				<div class="circle"></div>
+				<a href="/">首頁</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+			<li aria-current={$page.url.pathname === '/search' ? 'page' : undefined}>
+				<div class="circle"></div>
+				<a href="/search">搜尋</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
+			<li aria-current={$page.url.pathname.startsWith('/profile') ? 'page' : undefined}>
+				<!-- a circle element -->
+				<div class="circle"></div>
+				<a href="/profile">我的</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
 	</nav>
-
-	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub" />
-		</a>
-	</div>
 </header>
 
 <style>
+	/* set background variable in the root */
+	:root {
+		--background: #d9d9d9;
+		--menu-circle: #fafafa;
+	}
+
+	#menu {
+		/* put the navbar bottom of the screen and place in the center */
+		position: fixed;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		background: var(--background);
+		/* background-size: contain;
+		display: flex;
+		justify-content: center;
+		align-items: center; */
+		border-top: 1px solid #515151;
+	}
+
+	#menu > ul {
+		position: relative;
+		padding: 0;
+		margin: 0;
+		height: 5em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		background: var(--background);
+		background-size: contain;
+		top: 1rem;
+	} 
+	#menu > ul > li {
+		position: relative;
+		height: 100%;
+		width: calc(100% / 3);
+		text-align: center;
+	}
+	/* #menu > ul > li[aria-current='page']::before { */
+
+	#menu > ul > li::before {
+		/* --size: 12px;
+		content: '';
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 0;
+		left: calc(50% - var(--size)); */
+
+		/* left: calc(30% - var(--size)); */
+		/* border: var(--size) solid transparent;
+		border-top: var(--size) solid var(--color-theme-1); */
+	}
+	#menu > ul > li > a {
+		/* control the position */
+		position: relative;
+		/* very small font */
+		font-size: 0.7rem;
+		/* default color: black */
+		color: #000000;
+	}
+	.circle {
+		position: relative;
+		/* top: -1.5em; */
+		/* set variable for the size */
+		--size: 2rem;
+		left: calc(50% - var(--size)/2);
+		width: var(--size);
+		height: var(--size);
+		border-radius: 50%;
+		background: var(--menu-circle);
+	}
+	a {
+		text-decoration: none;
+	}
+</style>
+<!-- <style>
 	header {
 		display: flex;
 		justify-content: space-between;
@@ -126,4 +191,4 @@
 	a:hover {
 		color: var(--color-theme-1);
 	}
-</style>
+</style> -->

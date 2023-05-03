@@ -24,3 +24,9 @@
 		using it with JavaScript disabled!
 	</p>
 </div>
+
+<style>
+	h1{
+		color: lightblue;
+	}
+</style>
