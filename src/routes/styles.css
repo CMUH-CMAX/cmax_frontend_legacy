@@ -24,6 +24,11 @@
 	--theme-dark: var(--theme-dark-100);
 	--theme-main: var(--theme-main-80);
 	--theme-comp: var(--theme-comp-80);
+
+	--text-color: black;
+	--background-color: white;
+	--linear-background-color: linear-gradient(180deg, #9ACFD0 0%, #67BEBE 100%);
+	--dark-linear-background-color: linear-gradient(180deg, #388E8E 0%, #1A5B5B 100%);
 }
 
 * {
@@ -32,4 +37,8 @@
 
 a {
 	-webkit-tap-highlight-color: transparent;
+}
+
+main {
+	/* background: #c3e2e2; */
 }

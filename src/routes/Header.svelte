@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import { Home, MagnifyingGlass, User } from 'svelte-heros-v2';
 </script>
 
 <header>
@@ -7,19 +8,25 @@
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">
-					<div class="circle"></div>
+					<div class="navbar-icon">
+						<Home variation="solid" size="32" />
+					</div>
 					首頁
 				</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/search' ? 'page' : undefined}>
-				<a href="/search">
-					<div class="circle"></div>
+				<a href="/">
+					<div class="navbar-icon">
+						<MagnifyingGlass variation="solid" size="32" />
+					</div>
 					搜尋
 				</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/about') ? 'page' : undefined}>
 				<a href="/about">
-					<div class="circle"></div>
+					<div class="navbar-icon">
+						<User variation="solid" size="32" />
+					</div>
 					我的
 				</a>
 			</li>
@@ -30,7 +37,6 @@
 <style>
 	/* set background variable in the root */
 	:root {
-		--background: ;
 		--menu-circle: #fafafa;
 	}
 
@@ -41,12 +47,13 @@
 		left: 50%;
 		transform: translateX(-50%);
 		width: 100%;
-		background: var(--theme-main);
+		background: var(--background-color);
+		/* background: var(--theme-main); */
 		/* background-size: contain;
 		display: flex;
 		justify-content: center;
 		align-items: center; */
-		border-top: 1px solid var(--theme-dark-80);
+		/* border-top: 1px solid var(--theme-dark-80); */
 	}
 
 	#menu > ul {
@@ -77,6 +84,13 @@
 		position: relative;
 		font-size: 0.7rem;
 		color: #000000;
+	}
+	.navbar-icon {
+		position: relative;
+		--size: 2rem;
+		left: calc(50% - var(--size)/2);
+		width: var(--size);
+		height: var(--size);
 	}
 	.circle {
 		position: relative;
