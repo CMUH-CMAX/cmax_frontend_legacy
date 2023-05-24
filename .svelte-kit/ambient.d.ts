@@ -32,8 +32,8 @@ declare module '$env/static/private' {
 	export const TERM_PROGRAM: string;
 	export const npm_package_devDependencies_eslint_plugin_svelte: string;
 	export const NODE: string;
-	export const _P9K_TTY: string;
 	export const NVM_CD_FLAGS: string;
+	export const _P9K_TTY: string;
 	export const npm_package_devDependencies_prettier_plugin_svelte: string;
 	export const npm_package_devDependencies_typescript: string;
 	export const INIT_CWD: string;
@@ -159,8 +159,8 @@ declare module '$env/dynamic/private' {
 		TERM_PROGRAM: string;
 		npm_package_devDependencies_eslint_plugin_svelte: string;
 		NODE: string;
-		_P9K_TTY: string;
 		NVM_CD_FLAGS: string;
+		_P9K_TTY: string;
 		npm_package_devDependencies_prettier_plugin_svelte: string;
 		npm_package_devDependencies_typescript: string;
 		INIT_CWD: string;

@@ -3,32 +3,36 @@
 @tailwind utilities;
 
 :root {
-	--theme-dark-100: #413F3E;
-	--theme-dark-80: #8B8986;
-	--theme-dark-60: #BAB6B2;
-	--theme-dark-40: #DBD6D1;
-	--theme-dark-20: #E7E2DC;
 
-	--theme-main-100: #1A5B5B;
-	--theme-main-80: #388E8E;
-	--theme-main-60: #67BEBE;
-	--theme-main-40: #9AD0D0;
-	--theme-main-20: #B7DDDD;
+	--gray-1: #F8F8F8;
+	--gray-2: #DBD6D1;
+	--gray-3: #BAB6B2;
+	--gray-4: #8B8986;
+	--gray-5: #413F3E;
 
-	--theme-comp-100: #000000;
-	--theme-comp-80: #CE575E;
-	--theme-comp-60: #F09EA3;
-	--theme-comp-40: #F8C4C7;
-	--theme-comp-20: #FFFFFF;
+	--blue-1: #D7EEEE;
+	--blue-2: #9AD0D0;
+	--blue-3: #67BEBE;
+	--blue-4: #388E8E;
+	--blue-5: #1A5B5B;
 
-	--theme-dark: var(--theme-dark-100);
-	--theme-main: var(--theme-main-80);
-	--theme-comp: var(--theme-comp-80);
+	--red-2:  #F8C4C7;
+	--red-3:  #F09EA3;
+	--red-4:  #CE575E;
 
-	--text-color: black;
-	--background-color: white;
-	--linear-background-color: linear-gradient(180deg, #9ACFD0 0%, #67BEBE 100%);
-	--dark-linear-background-color: linear-gradient(180deg, #388E8E 0%, #1A5B5B 100%);
+	--white-f: #FFFFFF;
+
+	--black-0: #000000;
+
+	--radial-1: radial-gradient(150.46% 63.63% at 96.8% 10.01%, var(--blue-4) 0%, var(--blue-5) 100%);
+	
+	--linear-1: linear-gradient(225deg, var(--blue-4) 0%, var(--blue-5) 100%);
+	--linear-2: linear-gradient(225deg, var(--blue-2) 0%, var(--blue-3) 100%);
+
+
+	--white-75p: #FFFFFFBF;
+	--white-50p: #FFFFFF80;
+	--white-25p: #FFFFFF40;
 }
 
 * {
@@ -41,4 +45,8 @@ a {
 
 main {
 	/* background: #c3e2e2; */
+}
+
+.white-text {
+	color: var(--white-f);
 }

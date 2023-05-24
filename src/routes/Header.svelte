@@ -7,27 +7,27 @@
 	<nav id="menu">
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">
+				<a href="/" class="{$page.url.pathname === '/' ? 'activate' : ''}">
 					<div class="navbar-icon">
 						<Home variation="solid" size="32" />
 					</div>
-					首頁
+					<span>首頁</span>
 				</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/search' ? 'page' : undefined}>
-				<a href="/">
+				<a href="/search" class="{$page.url.pathname === '/search' ? 'activate' : ''}">
 					<div class="navbar-icon">
 						<MagnifyingGlass variation="solid" size="32" />
 					</div>
-					搜尋
+					<span>搜尋</span>
 				</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/about') ? 'page' : undefined}>
-				<a href="/about">
+			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
+				<a href="/about" class="{$page.url.pathname === '/about' ? 'activate' : ''}">
 					<div class="navbar-icon">
-						<User variation="solid" size="32" />
+						<User variation="outline" size="32" />
 					</div>
-					我的
+					<span>我的</span>
 				</a>
 			</li>
 		</ul>
@@ -35,11 +35,6 @@
 </header>
 
 <style>
-	/* set background variable in the root */
-	:root {
-		--menu-circle: #fafafa;
-	}
-
 	#menu {
 		/* put the navbar bottom of the screen and place in the center */
 		position: fixed;
@@ -47,13 +42,7 @@
 		left: 50%;
 		transform: translateX(-50%);
 		width: 100%;
-		background: var(--background-color);
-		/* background: var(--theme-main); */
-		/* background-size: contain;
-		display: flex;
-		justify-content: center;
-		align-items: center; */
-		/* border-top: 1px solid var(--theme-dark-80); */
+		background: var(--white-f);
 	}
 
 	#menu > ul {
@@ -67,41 +56,39 @@
 		list-style: none;
 		background-size: contain;
 		top: 1rem;
-	} 
+	}
+
 	#menu > ul > li {
 		position: relative;
 		height: 100%;
 		width: calc(100% / 3);
 		text-align: center;
 	}
-	#menu > ul > li[aria-current='page'] .circle {
-		background: var(--theme-main-60);
-	}
 
-	#menu > ul > li::before {
-	}
 	#menu > ul > li > a {
 		position: relative;
 		font-size: 0.7rem;
-		color: #000000;
+		color: var(--black-0);
 	}
+
 	.navbar-icon {
-		position: relative;
 		--size: 2rem;
+
+		position: relative;
 		left: calc(50% - var(--size)/2);
 		width: var(--size);
 		height: var(--size);
 	}
-	.circle {
-		position: relative;
-		--size: 2rem;
-		left: calc(50% - var(--size)/2);
-		width: var(--size);
-		height: var(--size);
-		border-radius: 50%;
-		background: var(--menu-circle);
-	}
+
 	a {
 		text-decoration: none;
+	}
+
+	a.activate > * {
+		/* color: var(--blue-4); */
+		background: var(--linear-1);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 </style>

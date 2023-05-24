@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
 	<!-- Google fonts end -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </svelte:head>
 
 <div class="app">
@@ -19,7 +20,7 @@
 	</main>
 
 	<footer>
-		<p>ZoneTwelve ;-P</p>
+		<p>ZoneTwelve Here</p>
 	</footer>
 </div>
 
@@ -29,7 +30,6 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
-		/* background: var(--theme-main-20); */
 	}
 
 	main {
@@ -38,10 +38,11 @@
 		flex-direction: column;
 		/* padding: 1rem; */
 		width: 100%;
+		height:100%;
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
-		background: var(--main-background-color);
+		background: var(--radial-1);
 	}
 
 	footer {
