@@ -1,10 +1,10 @@
 {
-  "name": "CMAX 中醫地圖",
+  "name": "中醫地圖 - Chinese Mapping App X",
+  "short_name": "CMAX中醫地圖",
   "description": "連結民眾與中醫的專業分科平台",
-  "short_name": "中醫地圖",
   "start_url": "/",
   "lang": "zh-TW",
-  "display": "fullscreen",
+  "display": "standalone",
   "theme_color" : "#388E8E",
   "background_color" : "#388E8E",
   "orientation": "portrait",

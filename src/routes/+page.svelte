@@ -1,6 +1,6 @@
 <script>
 		import { Bell, Squares2x2, FaceSmile, Map, ChatBubbleOvalLeftEllipsis, Eye } from 'svelte-heros-v2';
-		let lastname = '殊橋'
+		let lastname = '殊橋';
 		let symptomsRank = [
 			{
 				name: '發燒',
@@ -10,7 +10,7 @@
 				name: '紅疹',
 				view: 1324
 			}
-		]
+		];
 </script>
 
 <div class="">

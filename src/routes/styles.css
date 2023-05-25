@@ -34,7 +34,9 @@
 	--white-50p: #FFFFFF80;
 	--white-25p: #FFFFFF40;
 }
-
+body{
+	background: var(--radial-1);
+}
 * {
 	font-family: 'Noto Sans TC', sans-serif;
 }
