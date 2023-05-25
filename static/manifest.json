@@ -1,0 +1,104 @@
+{
+  "name": "CMAX 中醫地圖",
+  "description": "連結民眾與中醫的專業分科平台",
+  "short_name": "中醫地圖",
+  "start_url": "/",
+  "lang": "zh-TW",
+  "display": "fullscreen",
+  "theme_color" : "#388E8E",
+  "background_color" : "#388E8E",
+  "orientation": "portrait",
+  "dir": "ltr",
+  "shortcuts": [
+    {
+      "name": "首頁",
+      "url": "/"
+    },
+    {
+      "name": "搜尋",
+      "url": "/search"
+    },
+    {
+      "name": "我的",
+      "url": "/profile"
+    }
+  ],
+  "icons": [
+    {
+      "src": "CMAX_logo_darkblue-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "CMAX_logo_darkblue-16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "CMAX_logo_darkblue-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "CMAX_logo_darkblue-64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "CMAX_logo_darkblue-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "CMAX_logo_darkblue-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "CMAX_logo_darkblue-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "CMAX_logo_darkblue.svg",
+      "type": "image/svg"
+    }
+  ],
+  "categories": [
+    "health",
+    "medical"
+  ],
+  "display_override": [
+    "standalone",
+    "window-control-overlay",
+    "browser"
+  ],
+  "iarc_rating_id": "none",
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://laptop.0.z12.tw",
+      "id": "tw.z12.dev.cmax"
+    }
+  ],
+  "prefer_related_applications": false,
+  "scope": "https://laptop.0.z12.tw",
+  "share_target": {
+    "action": "/",
+    "method": "GET"
+  },
+  "screenshots": [
+    {
+      "src": "iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_portrait.png",
+      "sizes": "1170x2532",
+      "type": "image/png"
+    }
+  ]
+}
