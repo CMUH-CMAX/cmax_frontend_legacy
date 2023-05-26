@@ -1,19 +1,22 @@
 <script>
-		import { Bell, Squares2x2, FaceSmile, Map, ChatBubbleOvalLeftEllipsis, Eye } from 'svelte-heros-v2';
-		let lastname = '殊橋';
-		let symptomsRank = [
-			{
-				name: '發燒',
-				view: 3578,
-			},
-			{
-				name: '紅疹',
-				view: 1324
-			}
-		];
+	import moonAndRabitSvg from '$lib/assets/Moon&Rabit.svg';
+	import cloudSvg from '$lib/assets/Cloud.svg';
+	import { Bell, Squares2x2, FaceSmile, Map, ChatBubbleOvalLeftEllipsis, Eye } from 'svelte-heros-v2';
+	let lastname = '殊橋';
+	let symptomsRank = [
+		{
+			name: '發燒',
+			view: 3578,
+		},
+		{
+			name: '紅疹',
+			view: 1324
+		}
+	];
+		
 </script>
 
-<div class="">
+<div class="main">
 	<div class="top-content content-slot mx-auto grid grid-cols-4 gap-4 content-around p-5">
 		<div class="col-span-3 text-white">
 			<p class="text-xs">Hi，<span class="lastname font-semibold">{lastname}</span>！</p>
@@ -33,15 +36,16 @@
 		</div>
 	</div>
 
-	<div class="signin-slot m-5 text-white flex justify-center items-center outline">
-		<h1>月兔</h1>
+	<div class="signin-slot m-5 text-white flex justify-center items-center">
+		<img src="{moonAndRabitSvg}" alt="">
+		<img class="front-cover" src="{cloudSvg}" alt="">
 	</div>
 
 	<div class="recent-slot grid m-5">
 
-		<div class="grid grid-cols-4 gap-4 pb-2 white-text">
-			<p class="col-span-3 text-sm gap-4 pb-2 white-text">最近常見症狀</p>
-			<p class="text-sm text-end">查看更多</p>
+		<div class="grid grid-cols-4 gap-4 pb-2 white-text text-base">
+			<p class="col-span-3 gap-4 pb-2 white-text">最近常見症狀</p>
+			<p class="text-end">查看更多</p>
 		</div>
 
 		<div class="grid grid-cols-2">
@@ -71,7 +75,7 @@
 
 	<div class="service-slot m-5">
 		<span class="text-white">服務</span>
-		<div class="service-card grid grid-cols-4 rounded-lg py-5">
+		<div class="service-card grid grid-cols-4 rounded-lg py-5 mt-2">
 
 			<div class="service-items col">
 				<div class="service-icon flex justify-center items-center rounded-full mb-2">
@@ -103,6 +107,9 @@
 
 		</div>
 	</div>
+
+	<!-- divisor for show content behind navbar -->
+	<div class="p-5"></div>
 </div>
 
 <style>
@@ -115,8 +122,20 @@
 		background: var(--white-f);
 	}
 
-	.signin-slot {
-		height: 250px;
+	.signin-slot > .front-cover {
+		position: absolute;
+		/* add keyframe */
+		/* animation: front-cover 100s ease-in-out infinite; */
+	}
+
+	/* animation of front-cover */
+	@keyframes front-cover {
+		0% {
+			transform: translateX(-150%);
+		}
+		100% {
+			transform: translateX(150%);
+		}
 	}
 
 	.symptoms-card {

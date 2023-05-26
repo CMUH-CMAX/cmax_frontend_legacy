@@ -1,7 +1,6 @@
 <script>
 	import Header from './Header.svelte';
-	import './styles.css';	
-
+	import './styles.css';
 </script>
 
 <svelte:head>
@@ -18,22 +17,22 @@
 	<meta name="application-name" content="CMAX">
 	<meta name="apple-mobile-web-app-title" content="CMAX">
 	<meta name="msapplication-starturl" content="/">
-	<link rel="icon" type="image/png" sizes="128x128" href="CMAX_logo_darkblue-128.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="128x128" href="CMAX_logo_darkblue-128.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="CMAX_logo_darkblue-16.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="16x16" href="CMAX_logo_darkblue-16.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="CMAX_logo_darkblue-32.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="32x32" href="CMAX_logo_darkblue-32.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="CMAX_logo_darkblue-64.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="64x64" href="CMAX_logo_darkblue-64.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="CMAX_logo_darkblue-96.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="96x96" href="CMAX_logo_darkblue-96.png">
-	<link rel="icon" type="image/png" sizes="256x256" href="CMAX_logo_darkblue-256.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="256x256" href="CMAX_logo_darkblue-256.png">
-	<link rel="icon" type="image/png" sizes="512x512" href="CMAX_logo_darkblue-512.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="512x512" href="CMAX_logo_darkblue-512.png">
-	<link rel="icon" type="image/svg" href="CMAX_logo_darkblue.svg">
-	<link rel="apple-touch-icon" type="image/svg" href="CMAX_logo_darkblue.svg">
+	<link rel="icon" type="image/png" sizes="128x128" href="/CMAX_logo_darkblue-128.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="128x128" href="/CMAX_logo_darkblue-128.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/CMAX_logo_darkblue-16.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="16x16" href="/CMAX_logo_darkblue-16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/CMAX_logo_darkblue-32.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="32x32" href="/CMAX_logo_darkblue-32.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="/CMAX_logo_darkblue-64.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="64x64" href="/CMAX_logo_darkblue-64.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/CMAX_logo_darkblue-96.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="96x96" href="/CMAX_logo_darkblue-96.png">
+	<link rel="icon" type="image/png" sizes="256x256" href="/CMAX_logo_darkblue-256.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="256x256" href="/CMAX_logo_darkblue-256.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="/CMAX_logo_darkblue-512.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="512x512" href="/CMAX_logo_darkblue-512.png">
+	<link rel="icon" type="image/svg" href="/CMAX_logo_darkblue.svg">
+	<link rel="apple-touch-icon" type="image/svg" href="/CMAX_logo_darkblue.svg">
 </svelte:head>
 
 <div class="app">
@@ -49,7 +48,6 @@
 </div>
 
 <style>
-
 	.app {
 		display: flex;
 		flex-direction: column;
@@ -66,7 +64,7 @@
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
-		background: var(--radial-1);
+		/* background: var(--radial-1); */
 	}
 
 	footer {

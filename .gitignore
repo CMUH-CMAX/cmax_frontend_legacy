@@ -20,5 +20,6 @@ node_modules
 /yarn-error.log
 _actual*.*
 _output
+output
 /types
 .eslintcache

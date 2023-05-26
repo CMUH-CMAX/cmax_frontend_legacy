@@ -1,5 +1,4 @@
-import { c as create_ssr_component, d as compute_rest_props, f as spread, h as escape_attribute_value, i as escape_object, e as escape, v as validate_component } from "../../chunks/index3.js";
-const Counter_svelte_svelte_type_style_lang = "";
+import { c as create_ssr_component, a as compute_rest_props, b as spread, e as escape_attribute_value, d as escape_object, h as escape, v as validate_component, g as add_attribute } from "../../chunks/index3.js";
 const Bell = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, ["size", "strokeWidth", "color", "variation", "ariaLabel"]);
   let { size = "24" } = $$props;
@@ -57,41 +56,364 @@ const Bell = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     {}
   )}><!-- HTML_TAG_START -->${svgpath}<!-- HTML_TAG_END --></svg>`;
 });
+const ChatBubbleOvalLeftEllipsis = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["size", "strokeWidth", "color", "variation", "ariaLabel"]);
+  let { size = "24" } = $$props;
+  let { strokeWidth = "1.5" } = $$props;
+  let { color = "currentColor" } = $$props;
+  let { variation = "outline" } = $$props;
+  let viewBox;
+  let svgpath;
+  let svgoutline = `<path d="M8.625 12C8.625 12.2071 8.45711 12.375 8.25 12.375C8.04289 12.375 7.875 12.2071 7.875 12C7.875 11.7929 8.04289 11.625 8.25 11.625C8.45711 11.625 8.625 11.7929 8.625 12ZM8.625 12H8.25M12.375 12C12.375 12.2071 12.2071 12.375 12 12.375C11.7929 12.375 11.625 12.2071 11.625 12C11.625 11.7929 11.7929 11.625 12 11.625C12.2071 11.625 12.375 11.7929 12.375 12ZM12.375 12H12M16.125 12C16.125 12.2071 15.9571 12.375 15.75 12.375C15.5429 12.375 15.375 12.2071 15.375 12C15.375 11.7929 15.5429 11.625 15.75 11.625C15.9571 11.625 16.125 11.7929 16.125 12ZM16.125 12H15.75M21 12C21 16.5563 16.9706 20.25 12 20.25C11.1125 20.25 10.2551 20.1323 9.44517 19.9129C8.47016 20.5979 7.28201 21 6 21C5.80078 21 5.60376 20.9903 5.40967 20.9713C5.25 20.9558 5.0918 20.9339 4.93579 20.906C5.41932 20.3353 5.76277 19.6427 5.91389 18.8808C6.00454 18.4238 5.7807 17.9799 5.44684 17.6549C3.9297 16.1782 3 14.1886 3 12C3 7.44365 7.02944 3.75 12 3.75C16.9706 3.75 21 7.44365 21 12Z" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round"/> `;
+  let svgsolid = `<path fill-rule="evenodd" clip-rule="evenodd" d="M4.80365 21.6442C4.9793 21.6757 5.15732 21.7003 5.33691 21.7178C5.55516 21.7391 5.77647 21.75 6 21.75C7.3153 21.75 8.54447 21.3731 9.58317 20.7213C10.3569 20.9034 11.1668 21 12 21C17.322 21 21.75 17.0307 21.75 12C21.75 6.96934 17.322 3 12 3C6.67799 3 2.25 6.96934 2.25 12C2.25 14.4086 3.2746 16.5871 4.92371 18.1923C5.15571 18.4182 5.20107 18.6196 5.17822 18.7349C5.05254 19.3685 4.76687 19.9451 4.36357 20.4211C4.19016 20.6258 4.13927 20.9075 4.23008 21.1599C4.3209 21.4123 4.5396 21.597 4.80365 21.6442ZM8.25 10.875C7.62868 10.875 7.125 11.3787 7.125 12C7.125 12.6213 7.62868 13.125 8.25 13.125C8.87132 13.125 9.375 12.6213 9.375 12C9.375 11.3787 8.87132 10.875 8.25 10.875ZM10.875 12C10.875 11.3787 11.3787 10.875 12 10.875C12.6213 10.875 13.125 11.3787 13.125 12C13.125 12.6213 12.6213 13.125 12 13.125C11.3787 13.125 10.875 12.6213 10.875 12ZM15.75 10.875C15.1287 10.875 14.625 11.3787 14.625 12C14.625 12.6213 15.1287 13.125 15.75 13.125C16.3713 13.125 16.875 12.6213 16.875 12C16.875 11.3787 16.3713 10.875 15.75 10.875Z" fill="${color}"/> `;
+  let { ariaLabel = "chat bubble oval left ellipsis" } = $$props;
+  if ($$props.size === void 0 && $$bindings.size && size !== void 0)
+    $$bindings.size(size);
+  if ($$props.strokeWidth === void 0 && $$bindings.strokeWidth && strokeWidth !== void 0)
+    $$bindings.strokeWidth(strokeWidth);
+  if ($$props.color === void 0 && $$bindings.color && color !== void 0)
+    $$bindings.color(color);
+  if ($$props.variation === void 0 && $$bindings.variation && variation !== void 0)
+    $$bindings.variation(variation);
+  if ($$props.ariaLabel === void 0 && $$bindings.ariaLabel && ariaLabel !== void 0)
+    $$bindings.ariaLabel(ariaLabel);
+  {
+    switch (variation) {
+      case "outline":
+        svgpath = svgoutline;
+        viewBox = "0 0 24 24";
+        break;
+      case "solid":
+        svgpath = svgsolid;
+        viewBox = "0 0 24 24";
+        break;
+      default:
+        svgpath = svgoutline;
+        viewBox = "0 0 24 24";
+    }
+  }
+  return `<svg${spread(
+    [
+      { xmlns: "http://www.w3.org/2000/svg" },
+      { width: escape_attribute_value(size) },
+      { height: escape_attribute_value(size) },
+      {
+        class: escape_attribute_value($$props.class)
+      },
+      escape_object($$restProps),
+      {
+        "aria-label": escape_attribute_value(ariaLabel)
+      },
+      { fill: "none" },
+      { viewBox: escape_attribute_value(viewBox) },
+      {
+        "stroke-width": escape_attribute_value(strokeWidth)
+      }
+    ],
+    {}
+  )}><!-- HTML_TAG_START -->${svgpath}<!-- HTML_TAG_END --></svg>`;
+});
+const Eye = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["size", "strokeWidth", "color", "variation", "ariaLabel"]);
+  let { size = "24" } = $$props;
+  let { strokeWidth = "1.5" } = $$props;
+  let { color = "currentColor" } = $$props;
+  let { variation = "outline" } = $$props;
+  let viewBox;
+  let svgpath;
+  let svgoutline = `<path d="M2.03556 12.3224C1.96648 12.1151 1.96642 11.8907 2.03538 11.6834C3.42374 7.50972 7.3608 4.5 12.0008 4.5C16.6387 4.5 20.5742 7.50692 21.9643 11.6776C22.0334 11.8849 22.0335 12.1093 21.9645 12.3166C20.5762 16.4903 16.6391 19.5 11.9991 19.5C7.36121 19.5 3.42565 16.4931 2.03556 12.3224Z" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round"/> <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3432 15 9.00001 13.6569 9.00001 12C9.00001 10.3431 10.3432 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round"/> `;
+  let svgsolid = `<path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" fill="${color}"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.32341 11.4467C2.81066 6.97571 7.02791 3.75 12.0005 3.75C16.9708 3.75 21.1864 6.97271 22.6755 11.4405C22.7959 11.8015 22.796 12.1922 22.6759 12.5533C21.1886 17.0243 16.9714 20.25 11.9988 20.25C7.02847 20.25 2.81284 17.0273 1.32374 12.5595C1.2034 12.1985 1.20328 11.8078 1.32341 11.4467ZM17.25 12C17.25 14.8995 14.8995 17.25 12 17.25C9.1005 17.25 6.75 14.8995 6.75 12C6.75 9.1005 9.1005 6.75 12 6.75C14.8995 6.75 17.25 9.1005 17.25 12Z" fill="${color}"/> `;
+  let { ariaLabel = "eye" } = $$props;
+  if ($$props.size === void 0 && $$bindings.size && size !== void 0)
+    $$bindings.size(size);
+  if ($$props.strokeWidth === void 0 && $$bindings.strokeWidth && strokeWidth !== void 0)
+    $$bindings.strokeWidth(strokeWidth);
+  if ($$props.color === void 0 && $$bindings.color && color !== void 0)
+    $$bindings.color(color);
+  if ($$props.variation === void 0 && $$bindings.variation && variation !== void 0)
+    $$bindings.variation(variation);
+  if ($$props.ariaLabel === void 0 && $$bindings.ariaLabel && ariaLabel !== void 0)
+    $$bindings.ariaLabel(ariaLabel);
+  {
+    switch (variation) {
+      case "outline":
+        svgpath = svgoutline;
+        viewBox = "0 0 24 24";
+        break;
+      case "solid":
+        svgpath = svgsolid;
+        viewBox = "0 0 24 24";
+        break;
+      default:
+        svgpath = svgoutline;
+        viewBox = "0 0 24 24";
+    }
+  }
+  return `<svg${spread(
+    [
+      { xmlns: "http://www.w3.org/2000/svg" },
+      { width: escape_attribute_value(size) },
+      { height: escape_attribute_value(size) },
+      {
+        class: escape_attribute_value($$props.class)
+      },
+      escape_object($$restProps),
+      {
+        "aria-label": escape_attribute_value(ariaLabel)
+      },
+      { fill: "none" },
+      { viewBox: escape_attribute_value(viewBox) },
+      {
+        "stroke-width": escape_attribute_value(strokeWidth)
+      }
+    ],
+    {}
+  )}><!-- HTML_TAG_START -->${svgpath}<!-- HTML_TAG_END --></svg>`;
+});
+const FaceSmile = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["size", "strokeWidth", "color", "variation", "ariaLabel"]);
+  let { size = "24" } = $$props;
+  let { strokeWidth = "1.5" } = $$props;
+  let { color = "currentColor" } = $$props;
+  let { variation = "outline" } = $$props;
+  let viewBox;
+  let svgpath;
+  let svgoutline = `<path d="M15.182 15.182C13.4246 16.9393 10.5754 16.9393 8.81802 15.182M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12ZM9.75 9.75C9.75 10.1642 9.58211 10.5 9.375 10.5C9.16789 10.5 9 10.1642 9 9.75C9 9.33579 9.16789 9 9.375 9C9.58211 9 9.75 9.33579 9.75 9.75ZM9.375 9.75H9.3825V9.765H9.375V9.75ZM15 9.75C15 10.1642 14.8321 10.5 14.625 10.5C14.4179 10.5 14.25 10.1642 14.25 9.75C14.25 9.33579 14.4179 9 14.625 9C14.8321 9 15 9.33579 15 9.75ZM14.625 9.75H14.6325V9.765H14.625V9.75Z" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round"/> `;
+  let svgsolid = `<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.25C6.61522 2.25 2.25 6.61522 2.25 12C2.25 17.3848 6.61522 21.75 12 21.75C17.3848 21.75 21.75 17.3848 21.75 12C21.75 6.61522 17.3848 2.25 12 2.25ZM9.375 8.25C8.83433 8.25 8.54674 8.66881 8.43901 8.88426C8.30886 9.14457 8.25 9.45171 8.25 9.75C8.25 10.0483 8.30886 10.3554 8.43901 10.6157C8.54674 10.8312 8.83433 11.25 9.375 11.25C9.91567 11.25 10.2033 10.8312 10.311 10.6157C10.4411 10.3554 10.5 10.0483 10.5 9.75C10.5 9.45171 10.4411 9.14457 10.311 8.88426C10.2033 8.66881 9.91567 8.25 9.375 8.25ZM13.689 8.88426C13.7967 8.66881 14.0843 8.25 14.625 8.25C15.1657 8.25 15.4533 8.66881 15.561 8.88426C15.6911 9.14457 15.75 9.45171 15.75 9.75C15.75 10.0483 15.6911 10.3554 15.561 10.6157C15.4533 10.8312 15.1657 11.25 14.625 11.25C14.0843 11.25 13.7967 10.8312 13.689 10.6157C13.5589 10.3554 13.5 10.0483 13.5 9.75C13.5 9.45171 13.5589 9.14457 13.689 8.88426ZM15.7123 15.7123C16.0052 15.4194 16.0052 14.9446 15.7123 14.6517C15.4194 14.3588 14.9445 14.3588 14.6517 14.6517C13.1872 16.1161 10.8128 16.1161 9.34835 14.6517C9.05546 14.3588 8.58058 14.3588 8.28769 14.6517C7.9948 14.9446 7.9948 15.4194 8.28769 15.7123C10.3379 17.7626 13.6621 17.7626 15.7123 15.7123Z" fill="${color}"/> `;
+  let { ariaLabel = "face smile" } = $$props;
+  if ($$props.size === void 0 && $$bindings.size && size !== void 0)
+    $$bindings.size(size);
+  if ($$props.strokeWidth === void 0 && $$bindings.strokeWidth && strokeWidth !== void 0)
+    $$bindings.strokeWidth(strokeWidth);
+  if ($$props.color === void 0 && $$bindings.color && color !== void 0)
+    $$bindings.color(color);
+  if ($$props.variation === void 0 && $$bindings.variation && variation !== void 0)
+    $$bindings.variation(variation);
+  if ($$props.ariaLabel === void 0 && $$bindings.ariaLabel && ariaLabel !== void 0)
+    $$bindings.ariaLabel(ariaLabel);
+  {
+    switch (variation) {
+      case "outline":
+        svgpath = svgoutline;
+        viewBox = "0 0 24 24";
+        break;
+      case "solid":
+        svgpath = svgsolid;
+        viewBox = "0 0 24 24";
+        break;
+      default:
+        svgpath = svgoutline;
+        viewBox = "0 0 24 24";
+    }
+  }
+  return `<svg${spread(
+    [
+      { xmlns: "http://www.w3.org/2000/svg" },
+      { width: escape_attribute_value(size) },
+      { height: escape_attribute_value(size) },
+      {
+        class: escape_attribute_value($$props.class)
+      },
+      escape_object($$restProps),
+      {
+        "aria-label": escape_attribute_value(ariaLabel)
+      },
+      { fill: "none" },
+      { viewBox: escape_attribute_value(viewBox) },
+      {
+        "stroke-width": escape_attribute_value(strokeWidth)
+      }
+    ],
+    {}
+  )}><!-- HTML_TAG_START -->${svgpath}<!-- HTML_TAG_END --></svg>`;
+});
+const Map = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["size", "strokeWidth", "color", "variation", "ariaLabel"]);
+  let { size = "24" } = $$props;
+  let { strokeWidth = "1.5" } = $$props;
+  let { color = "currentColor" } = $$props;
+  let { variation = "outline" } = $$props;
+  let viewBox;
+  let svgpath;
+  let svgoutline = `<path d="M9 6.75002V15M15 9.00002V17.25M15.5031 20.7485L20.3781 18.311C20.7592 18.1204 21 17.7309 21 17.3047V4.82031C21 3.98401 20.1199 3.44007 19.3719 3.81408L15.5031 5.74847C15.1864 5.90683 14.8136 5.90683 14.4969 5.74847L9.50312 3.25158C9.1864 3.09322 8.8136 3.09322 8.49688 3.25158L3.62188 5.68908C3.24075 5.87965 3 6.26919 3 6.69531V19.1797C3 20.016 3.8801 20.56 4.62811 20.186L8.49688 18.2516C8.8136 18.0932 9.1864 18.0932 9.50312 18.2516L14.4969 20.7485C14.8136 20.9068 15.1864 20.9068 15.5031 20.7485Z" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round"/> `;
+  let svgsolid = `<path fill-rule="evenodd" clip-rule="evenodd" d="M8.16147 2.58076C8.68934 2.31683 9.31066 2.31683 9.83853 2.58076L14.8323 5.07765C14.9379 5.13043 15.0621 5.13043 15.1677 5.07765L19.0365 3.14326C20.2832 2.51992 21.75 3.42647 21.75 4.82031V17.3047C21.75 18.0149 21.3487 18.6642 20.7135 18.9818L15.8385 21.4193C15.3107 21.6832 14.6893 21.6832 14.1615 21.4193L9.16771 18.9224C9.06213 18.8696 8.93787 18.8696 8.8323 18.9224L4.96353 20.8568C3.71683 21.4801 2.25 20.5736 2.25 19.1797V6.69531C2.25 5.98512 2.65125 5.33587 3.28647 5.01826L8.16147 2.58076ZM9 6.00002C9.41421 6.00002 9.75 6.3358 9.75 6.75002V15C9.75 15.4142 9.41421 15.75 9 15.75C8.58579 15.75 8.25 15.4142 8.25 15V6.75002C8.25 6.3358 8.58579 6.00002 9 6.00002ZM15.75 9.00002C15.75 8.5858 15.4142 8.25002 15 8.25002C14.5858 8.25002 14.25 8.5858 14.25 9.00002V17.25C14.25 17.6642 14.5858 18 15 18C15.4142 18 15.75 17.6642 15.75 17.25V9.00002Z" fill="${color}"/> `;
+  let { ariaLabel = "map" } = $$props;
+  if ($$props.size === void 0 && $$bindings.size && size !== void 0)
+    $$bindings.size(size);
+  if ($$props.strokeWidth === void 0 && $$bindings.strokeWidth && strokeWidth !== void 0)
+    $$bindings.strokeWidth(strokeWidth);
+  if ($$props.color === void 0 && $$bindings.color && color !== void 0)
+    $$bindings.color(color);
+  if ($$props.variation === void 0 && $$bindings.variation && variation !== void 0)
+    $$bindings.variation(variation);
+  if ($$props.ariaLabel === void 0 && $$bindings.ariaLabel && ariaLabel !== void 0)
+    $$bindings.ariaLabel(ariaLabel);
+  {
+    switch (variation) {
+      case "outline":
+        svgpath = svgoutline;
+        viewBox = "0 0 24 24";
+        break;
+      case "solid":
+        svgpath = svgsolid;
+        viewBox = "0 0 24 24";
+        break;
+      default:
+        svgpath = svgoutline;
+        viewBox = "0 0 24 24";
+    }
+  }
+  return `<svg${spread(
+    [
+      { xmlns: "http://www.w3.org/2000/svg" },
+      { width: escape_attribute_value(size) },
+      { height: escape_attribute_value(size) },
+      {
+        class: escape_attribute_value($$props.class)
+      },
+      escape_object($$restProps),
+      {
+        "aria-label": escape_attribute_value(ariaLabel)
+      },
+      { fill: "none" },
+      { viewBox: escape_attribute_value(viewBox) },
+      {
+        "stroke-width": escape_attribute_value(strokeWidth)
+      }
+    ],
+    {}
+  )}><!-- HTML_TAG_START -->${svgpath}<!-- HTML_TAG_END --></svg>`;
+});
+const Squares2x2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["size", "strokeWidth", "color", "variation", "ariaLabel"]);
+  let { size = "24" } = $$props;
+  let { strokeWidth = "1.5" } = $$props;
+  let { color = "currentColor" } = $$props;
+  let { variation = "outline" } = $$props;
+  let viewBox;
+  let svgpath;
+  let svgoutline = `<path d="M3.75 6C3.75 4.75736 4.75736 3.75 6 3.75H8.25C9.49264 3.75 10.5 4.75736 10.5 6V8.25C10.5 9.49264 9.49264 10.5 8.25 10.5H6C4.75736 10.5 3.75 9.49264 3.75 8.25V6Z" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round"/> <path d="M3.75 15.75C3.75 14.5074 4.75736 13.5 6 13.5H8.25C9.49264 13.5 10.5 14.5074 10.5 15.75V18C10.5 19.2426 9.49264 20.25 8.25 20.25H6C4.75736 20.25 3.75 19.2426 3.75 18V15.75Z" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round"/> <path d="M13.5 6C13.5 4.75736 14.5074 3.75 15.75 3.75H18C19.2426 3.75 20.25 4.75736 20.25 6V8.25C20.25 9.49264 19.2426 10.5 18 10.5H15.75C14.5074 10.5 13.5 9.49264 13.5 8.25V6Z" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round"/> <path d="M13.5 15.75C13.5 14.5074 14.5074 13.5 15.75 13.5H18C19.2426 13.5 20.25 14.5074 20.25 15.75V18C20.25 19.2426 19.2426 20.25 18 20.25H15.75C14.5074 20.25 13.5 19.2426 13.5 18V15.75Z" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round"/> `;
+  let svgsolid = `<path fill-rule="evenodd" clip-rule="evenodd" d="M3 6C3 4.34315 4.34315 3 6 3H8.25C9.90685 3 11.25 4.34315 11.25 6V8.25C11.25 9.90685 9.90685 11.25 8.25 11.25H6C4.34315 11.25 3 9.90685 3 8.25V6ZM12.75 6C12.75 4.34315 14.0931 3 15.75 3H18C19.6569 3 21 4.34315 21 6V8.25C21 9.90685 19.6569 11.25 18 11.25H15.75C14.0931 11.25 12.75 9.90685 12.75 8.25V6ZM3 15.75C3 14.0931 4.34315 12.75 6 12.75H8.25C9.90685 12.75 11.25 14.0931 11.25 15.75V18C11.25 19.6569 9.90685 21 8.25 21H6C4.34315 21 3 19.6569 3 18V15.75ZM12.75 15.75C12.75 14.0931 14.0931 12.75 15.75 12.75H18C19.6569 12.75 21 14.0931 21 15.75V18C21 19.6569 19.6569 21 18 21H15.75C14.0931 21 12.75 19.6569 12.75 18V15.75Z" fill="${color}"/> `;
+  let { ariaLabel = "squares 2x2" } = $$props;
+  if ($$props.size === void 0 && $$bindings.size && size !== void 0)
+    $$bindings.size(size);
+  if ($$props.strokeWidth === void 0 && $$bindings.strokeWidth && strokeWidth !== void 0)
+    $$bindings.strokeWidth(strokeWidth);
+  if ($$props.color === void 0 && $$bindings.color && color !== void 0)
+    $$bindings.color(color);
+  if ($$props.variation === void 0 && $$bindings.variation && variation !== void 0)
+    $$bindings.variation(variation);
+  if ($$props.ariaLabel === void 0 && $$bindings.ariaLabel && ariaLabel !== void 0)
+    $$bindings.ariaLabel(ariaLabel);
+  {
+    switch (variation) {
+      case "outline":
+        svgpath = svgoutline;
+        viewBox = "0 0 24 24";
+        break;
+      case "solid":
+        svgpath = svgsolid;
+        viewBox = "0 0 24 24";
+        break;
+      default:
+        svgpath = svgoutline;
+        viewBox = "0 0 24 24";
+    }
+  }
+  return `<svg${spread(
+    [
+      { xmlns: "http://www.w3.org/2000/svg" },
+      { width: escape_attribute_value(size) },
+      { height: escape_attribute_value(size) },
+      {
+        class: escape_attribute_value($$props.class)
+      },
+      escape_object($$restProps),
+      {
+        "aria-label": escape_attribute_value(ariaLabel)
+      },
+      { fill: "none" },
+      { viewBox: escape_attribute_value(viewBox) },
+      {
+        "stroke-width": escape_attribute_value(strokeWidth)
+      }
+    ],
+    {}
+  )}><!-- HTML_TAG_START -->${svgpath}<!-- HTML_TAG_END --></svg>`;
+});
+const moonAndRabitSvg = "/_app/immutable/assets/Moon_Rabit.a2184e25.svg";
+const cloudSvg = "/_app/immutable/assets/Cloud.0ddee68a.svg";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".content-slot.svelte-yluvu0{width:100%;color:var(--theme-dark);background:var(--theme-main-80)}.content-piece.svelte-yluvu0{min-width:80%;color:var(--theme-dark);background:var(--theme-main-80)}.quick-search-btn.svelte-yluvu0{color:var(--theme-dark);background:var(--theme-main-20)}.notification.svelte-yluvu0{width:100%;height:100%}.notification-btn.svelte-yluvu0{width:2rem;height:2rem;background:var(--theme-main-20)}.recent.svelte-yluvu0{color:var(--theme-dark);background:var(--theme-main-20)}.box.svelte-yluvu0{width:4em;height:4em;background:var(--theme-main-20)}",
+  code: ".notification-btn.svelte-114lnlj.svelte-114lnlj{color:var(--blue-3);background:var(--white-f)}.quicksearch-btn.svelte-114lnlj.svelte-114lnlj{color:var(--gray-5);background:var(--white-f)}.signin-slot.svelte-114lnlj>.front-cover.svelte-114lnlj{position:absolute}@keyframes svelte-114lnlj-front-cover{0%{transform:translateX(-150%)}100%{transform:translateX(150%)}}.symptoms-card.svelte-114lnlj.svelte-114lnlj{background:var(--white-75p)}.symptoms-card.svelte-114lnlj.svelte-114lnlj:first-child{margin-right:5px}.symptoms-card.svelte-114lnlj.svelte-114lnlj:last-child{margin-left:5px}.service-card.svelte-114lnlj.svelte-114lnlj{background:var(--white-75p)}.service-items.svelte-114lnlj.svelte-114lnlj{display:flex;flex-direction:column;align-items:center;justify-content:center}.service-icon.svelte-114lnlj.svelte-114lnlj{width:57px;height:57px;background:var(--linear-2)}",
   map: null
 };
-let lastname = "殊樵";
+let lastname = "殊橋";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let symptomsRank = [{ name: "發燒", view: 3578 }, { name: "紅疹", view: 1324 }];
   $$result.css.add(css);
-  return `${$$result.head += `<!-- HEAD_svelte-8cf5ct_START -->${$$result.title = `<title>Home</title>`, ""}<meta name="description" content="CMAX"><!-- HEAD_svelte-8cf5ct_END -->`, ""}
+  return `<div class="main"><div class="top-content content-slot mx-auto grid grid-cols-4 gap-4 content-around p-5"><div class="col-span-3 text-white"><p class="text-xs">Hi，<span class="lastname font-semibold">${escape(lastname)}</span>！</p>
+			<p class="text-base">今天過得好嗎？</p></div>
+		<div class="flex justify-end"><div class="notification"><div class="notification-btn rounded-full w-10 h-10 flex justify-center items-center svelte-114lnlj">${validate_component(Bell, "Bell").$$render(
+    $$result,
+    {
+      variation: "outline",
+      size: "24",
+      class: "bell"
+    },
+    {},
+    {}
+  )}</div></div></div>
+		<div class="col-span-4"><p class="quicksearch-btn p-2 rounded-lg text-center svelte-114lnlj">尋找最適合的中醫及診所
+			</p></div></div>
 
-<div class="content-slot mx-auto grid grid-cols-4 gap-4 content-around p-4 svelte-yluvu0"><div class="col-span-3"><p class="text-xl">嗨，<span class="lastname font-semibold">${escape(lastname)}</span>！</p>
-		<p class="text-xl">今天過得好嗎？</p></div>
-	<div><div class="notification flex justify-center items-center svelte-yluvu0"><div class="notification-btn flex justify-center items-center rounded-full svelte-yluvu0">${validate_component(Bell, "Bell").$$render($$result, { variation: "solid", size: "20" }, {}, {})}</div></div></div>
-	<div class="col-span-4"><div class="quick-search-btn p-2 rounded-lg text-center svelte-yluvu0">尋找最適合你的中醫及診所
-		</div></div></div>
+	<div class="signin-slot m-5 text-white flex justify-center items-center svelte-114lnlj"><img${add_attribute("src", moonAndRabitSvg, 0)} alt="">
+		<img class="front-cover svelte-114lnlj"${add_attribute("src", cloudSvg, 0)} alt=""></div>
 
-<div class="m-2"></div>
+	<div class="recent-slot grid m-5"><div class="grid grid-cols-4 gap-4 pb-2 white-text text-base"><p class="col-span-3 gap-4 pb-2 white-text">最近常見症狀</p>
+			<p class="text-end">查看更多</p></div>
 
-<div class="content-slot mx-auto grid p-4 svelte-yluvu0"><div class="grid grid-cols-4 gap-4 pb-2"><p class="col-span-3 text-sm">最近常見症狀</p>
-		<p class="text-sm font-bold">查看更多</p></div>
+		<div class="grid grid-cols-2"><div class="symptoms-card flex col-span rounded px-5 py-3.5 text-sm svelte-114lnlj"><div class="flex justify-start">${escape(symptomsRank[0]["name"])}</div>
+				<div class="flex justify-end mr-0 ml-auto items-center">${validate_component(Eye, "Eye").$$render(
+    $$result,
+    {
+      variation: "outline",
+      size: "14",
+      class: "eye"
+    },
+    {},
+    {}
+  )}
+					<span>${escape(symptomsRank[0]["view"])}</span></div></div>
 
-	<div class="recent shadow rounded-md p-4 max-w-sm w-full mx-auto svelte-yluvu0"><div class="animate-pulse flex space-x-4"><div class="flex-1 space-y-6 py-1"><div class="space-y-3"><div class="grid grid-cols-3 gap-4"><div class="h-2 bg-slate-700 rounded col-span-2"></div></div>
-					<div class="h-2 bg-slate-700 rounded"></div></div></div>
-			<div class="rounded-full bg-slate-700 h-10 w-10"></div></div></div></div>
+			<div class="symptoms-card flex col-span rounded px-5 py-3.5 text-sm svelte-114lnlj"><div class="flex justify-start">${escape(symptomsRank[1]["name"])}</div>
+				<div class="flex justify-end mr-0 ml-auto items-center">${validate_component(Eye, "Eye").$$render(
+    $$result,
+    {
+      variation: "outline",
+      size: "14",
+      class: "eye"
+    },
+    {},
+    {}
+  )}
+					<span>${escape(symptomsRank[1]["view"])}</span></div></div></div></div>
 
-<div class="m-2"></div>
+	<div class="service-slot m-5"><span class="text-white">服務</span>
+		<div class="service-card grid grid-cols-4 rounded-lg py-5 mt-2 svelte-114lnlj"><div class="service-items col svelte-114lnlj"><div class="service-icon flex justify-center items-center rounded-full mb-2 svelte-114lnlj">${validate_component(Squares2x2, "Squares2x2").$$render($$result, { color: "white", size: "24" }, {}, {})}</div>
+				<span class="text-sm">症狀分類</span></div>
 
-<div class="content-piece mx-auto svelte-yluvu0"><div class="grid grid-cols-4 gap-4 text-center p-4 m-1"><div class="grid justify-center"><div class="box box-border md:box-content svelte-yluvu0"></div>
-			<p class="text-xs pt-1">症狀列別</p></div>
-		<div class="grid justify-center"><div class="box box-border md:box-content svelte-yluvu0"></div>
-			<p class="text-xs pt-1">症狀檢查器</p></div>
-		<div class="grid justify-center"><div class="box box-border md:box-content svelte-yluvu0"></div>
-			<p class="text-xs pt-1">診所地圖</p></div>
-		<div class="grid justify-center"><div class="box box-border md:box-content svelte-yluvu0"></div>
-			<p class="text-xs pt-1">許願池</p></div></div>
+			<div class="service-items col svelte-114lnlj"><div class="service-icon flex justify-center items-center rounded-full mb-2 svelte-114lnlj">${validate_component(FaceSmile, "FaceSmile").$$render($$result, { color: "white", size: "24" }, {}, {})}</div>
+				<span class="text-sm">症狀檢查器</span></div>
+
+			<div class="service-items col svelte-114lnlj"><div class="service-icon flex justify-center items-center rounded-full mb-2 svelte-114lnlj">${validate_component(Map, "Map").$$render($$result, { color: "white", size: "24" }, {}, {})}</div>
+				<span class="text-sm">診所地圖</span></div>
+
+			<div class="service-items col svelte-114lnlj"><div class="service-icon flex justify-center items-center rounded-full mb-2 svelte-114lnlj">${validate_component(ChatBubbleOvalLeftEllipsis, "ChatBubbleOvalLeftEllipsis").$$render($$result, { color: "white", size: "24" }, {}, {})}</div>
+				<span class="text-sm">許願池</span></div></div></div>
+
+	
+	<div class="p-5"></div>
 </div>`;
 });
 export {

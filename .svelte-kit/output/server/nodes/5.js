@@ -1,9 +1,9 @@
-import * as universal from '../entries/pages/sverdle/how-to-play/_page.ts.js';
+import * as server from '../entries/pages/sverdle/_page.server.ts.js';
 
 export const index = 5;
-export const component = async () => (await import('../entries/pages/sverdle/how-to-play/_page.svelte.js')).default;
-export { universal };
-export const universal_id = "src/routes/sverdle/how-to-play/+page.ts";
-export const imports = ["_app/immutable/entry/sverdle-how-to-play-page.svelte.e9e96d1e.js","_app/immutable/chunks/index.2f5461f2.js","_app/immutable/entry/sverdle-how-to-play-page.ts.13bb5e39.js","_app/immutable/chunks/environment.9aa685ef.js","_app/immutable/chunks/_page.1806d283.js"];
-export const stylesheets = ["_app/immutable/assets/_page.89a9e780.css"];
+export const component = async () => (await import('../entries/pages/sverdle/_page.svelte.js')).default;
+export { server };
+export const server_id = "src/routes/sverdle/+page.server.ts";
+export const imports = ["_app/immutable/entry/sverdle-page.svelte.92edb66f.js","_app/immutable/chunks/index.7d1e5ac3.js","_app/immutable/chunks/parse.d12b0d5b.js","_app/immutable/chunks/singletons.5835484a.js"];
+export const stylesheets = ["_app/immutable/assets/_page.9d501049.css"];
 export const fonts = [];

@@ -24,10 +24,11 @@
 
 	--black-0: #000000;
 
-	--radial-1: radial-gradient(150.46% 63.63% at 96.8% 10.01%, var(--blue-4) 0%, var(--blue-5) 100%);
+	--radial-1: radial-gradient(50% 50% at 50% 50%, #388E8E 0%, #236A6A 99.99%, #1A5B5B 100%);
 	
 	--linear-1: linear-gradient(225deg, var(--blue-4) 0%, var(--blue-5) 100%);
 	--linear-2: linear-gradient(225deg, var(--blue-2) 0%, var(--blue-3) 100%);
+	--linear-x21: linear-gradient(180deg, var(--blue-4) 5.39%, var(--blue-5) 73.52%);
 
 
 	--white-75p: #FFFFFFBF;
@@ -35,7 +36,10 @@
 	--white-25p: #FFFFFF40;
 }
 body{
-	background: var(--radial-1);
+	background: url('/Stars.svg'), var(--linear-x21);
+	/* background-repeat: repeat center center fixed; */
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 * {
 	font-family: 'Noto Sans TC', sans-serif;
@@ -43,10 +47,6 @@ body{
 
 a {
 	-webkit-tap-highlight-color: transparent;
-}
-
-main {
-	/* background: #c3e2e2; */
 }
 
 .white-text {

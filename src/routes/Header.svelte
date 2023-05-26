@@ -1,9 +1,11 @@
 <script>
 	import { page } from '$app/stores';
 	import { Home, MagnifyingGlass, User } from 'svelte-heros-v2';
+	import mountainSvg from '$lib/assets/mountain.svg';
 </script>
 
 <header>
+	<img class="mountainSvg" src={mountainSvg} alt="Welcome" />
 	<nav id="menu">
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
@@ -35,6 +37,16 @@
 </header>
 
 <style>
+	:root {
+		--menu-height: 5em;
+	}
+	.mountainSvg {
+		position: fixed;
+		bottom: var(--menu-height);
+		width: 100%;
+		height:auto;
+		z-index: -1;
+	}
 	#menu {
 		/* put the navbar bottom of the screen and place in the center */
 		position: fixed;
@@ -49,7 +61,7 @@
 		position: relative;
 		padding: 0;
 		margin: 0;
-		height: 5em;
+		height: var(--menu-height);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -85,7 +97,7 @@
 	}
 
 	a.activate > * {
-		/* color: var(--blue-4); */
+		color: var(--blue-4);
 		background: var(--linear-1);
 		background-clip: text;
 		-webkit-background-clip: text;

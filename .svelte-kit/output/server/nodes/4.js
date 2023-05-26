@@ -1,9 +1,9 @@
-import * as server from '../entries/pages/sverdle/_page.server.ts.js';
+import * as universal from '../entries/pages/search/_page.ts.js';
 
 export const index = 4;
-export const component = async () => (await import('../entries/pages/sverdle/_page.svelte.js')).default;
-export { server };
-export const server_id = "src/routes/sverdle/+page.server.ts";
-export const imports = ["_app/immutable/entry/sverdle-page.svelte.ae10740f.js","_app/immutable/chunks/index.2f5461f2.js","_app/immutable/chunks/parse.d12b0d5b.js","_app/immutable/chunks/singletons.29b4bc09.js"];
-export const stylesheets = ["_app/immutable/assets/_page.9d501049.css"];
+export const component = async () => (await import('../entries/pages/search/_page.svelte.js')).default;
+export { universal };
+export const universal_id = "src/routes/search/+page.ts";
+export const imports = ["_app/immutable/entry/search-page.svelte.aa4d235d.js","_app/immutable/chunks/index.7d1e5ac3.js","_app/immutable/entry/search-page.ts.13bb5e39.js","_app/immutable/chunks/environment.9aa685ef.js","_app/immutable/chunks/_page.cd42f2ff.js"];
+export const stylesheets = [];
 export const fonts = [];

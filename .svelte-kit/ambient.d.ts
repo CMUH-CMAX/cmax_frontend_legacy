@@ -45,7 +45,6 @@ declare module '$env/static/private' {
 	export const TMPDIR: string;
 	export const CONDA_SHLVL: string;
 	export const npm_package_scripts_lint: string;
-	export const CONDA_PROMPT_MODIFIER: string;
 	export const TERM_PROGRAM_VERSION: string;
 	export const npm_package_scripts_dev: string;
 	export const TERM_SESSION_ID: string;
@@ -71,11 +70,9 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies_svelte: string;
 	export const _CE_CONDA: string;
 	export const LSCOLORS: string;
-	export const CONDA_PREFIX_1: string;
 	export const npm_package_devDependencies__typescript_eslint_parser: string;
 	export const PATH: string;
 	export const npm_package_devDependencies__neoconfetti_svelte: string;
-	export const CONDA_PREFIX: string;
 	export const __CFBundleIdentifier: string;
 	export const PWD: string;
 	export const npm_package_devDependencies_tailwindcss: string;
@@ -112,7 +109,6 @@ declare module '$env/static/private' {
 	export const npm_package_scripts_format: string;
 	export const npm_lifecycle_script: string;
 	export const LC_CTYPE: string;
-	export const CONDA_DEFAULT_ENV: string;
 	export const NVM_BIN: string;
 	export const npm_config_user_agent: string;
 	export const INFOPATH: string;
@@ -172,7 +168,6 @@ declare module '$env/dynamic/private' {
 		TMPDIR: string;
 		CONDA_SHLVL: string;
 		npm_package_scripts_lint: string;
-		CONDA_PROMPT_MODIFIER: string;
 		TERM_PROGRAM_VERSION: string;
 		npm_package_scripts_dev: string;
 		TERM_SESSION_ID: string;
@@ -198,11 +193,9 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies_svelte: string;
 		_CE_CONDA: string;
 		LSCOLORS: string;
-		CONDA_PREFIX_1: string;
 		npm_package_devDependencies__typescript_eslint_parser: string;
 		PATH: string;
 		npm_package_devDependencies__neoconfetti_svelte: string;
-		CONDA_PREFIX: string;
 		__CFBundleIdentifier: string;
 		PWD: string;
 		npm_package_devDependencies_tailwindcss: string;
@@ -239,7 +232,6 @@ declare module '$env/dynamic/private' {
 		npm_package_scripts_format: string;
 		npm_lifecycle_script: string;
 		LC_CTYPE: string;
-		CONDA_DEFAULT_ENV: string;
 		NVM_BIN: string;
 		npm_config_user_agent: string;
 		INFOPATH: string;
