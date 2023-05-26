@@ -1,28 +1,23 @@
 <svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
+	<title>關於 CMAX 中醫地圖</title>
+	<meta name="description" content="關於 CMAX" />
 </svelte:head>
 
-<div class="text-column">
-	<h1>About this app</h1>
+<div class="flex justify-center items-center m-5 p-5 rounded-lg text-white bg-slate-900 drop-shadow-2xl">
+	<div>
+		<h1>關於 CMAX 中醫地圖</h1>
+		<br>
+		<pre>CMAX - Chinese Mapping App X</pre>
 
-	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
+		<p>
+			中醫地圖 CMAX 是一個網上中醫診所地圖，旨在幫助大眾透過演算法尋找合適的中醫診所。
+		</p>
+		<br>
+		<p>
+			感謝您使用 CMAX 中醫地圖，我們會不斷改善 CMAX 中醫地圖，希望能夠為大眾提供更好的服務。
+		</p>
+	</div>
 
-	<pre>npm create svelte@latest</pre>
-
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-
-	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
-	</p>
 </div>
 
 <style>

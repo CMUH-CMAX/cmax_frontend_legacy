@@ -5,6 +5,9 @@
 	"/about": [
 		"src/routes/about/+page.ts"
 	],
+	"/notification": [
+		"src/routes/notification/+page.ts"
+	],
 	"/search": [
 		"src/routes/search/+page.ts"
 	],

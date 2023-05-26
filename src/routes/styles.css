@@ -20,6 +20,9 @@
 	--red-3:  #F09EA3;
 	--red-4:  #CE575E;
 
+	--gold-1: #F2D791;
+	--gold-2: #E7B22C;
+
 	--white-f: #FFFFFF;
 
 	--black-0: #000000;
@@ -28,6 +31,7 @@
 	
 	--linear-1: linear-gradient(225deg, var(--blue-4) 0%, var(--blue-5) 100%);
 	--linear-2: linear-gradient(225deg, var(--blue-2) 0%, var(--blue-3) 100%);
+	--linear-gold: linear-gradient(205.68deg, var(--gold-1) 2.38%, var(--gold-2) 95.92%);
 	--linear-x21: linear-gradient(180deg, var(--blue-4) 5.39%, var(--blue-5) 73.52%);
 
 

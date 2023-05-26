@@ -13,7 +13,8 @@
 			view: 1324
 		}
 	];
-		
+	import mountainSvg from '$lib/assets/mountain.svg';
+
 </script>
 
 <div class="main">
@@ -24,9 +25,12 @@
 		</div>
 		<div class="flex justify-end">
 			<div class="notification">
-				<div class="notification-btn rounded-full w-10 h-10 flex justify-center items-center">
-					<Bell variation="outline" size="24" class="bell" />
-				</div>
+				<a href="/notification">
+
+					<div class="notification-btn rounded-full w-10 h-10 flex justify-center items-center">
+						<Bell variation="outline" size="24" class="bell" />
+					</div>
+				</a>
 			</div>
 		</div>
 		<div class="col-span-4">
@@ -50,7 +54,7 @@
 
 		<div class="grid grid-cols-2">
 
-			<div class="symptoms-card flex col-span rounded px-5 py-3.5 text-sm">
+			<div class="symptoms-card flex col-span rounded px-5 py-3.5 text-sm" data-rank="1">
 				<div class="flex justify-start">
 					{symptomsRank[0]['name']}
 				</div>
@@ -60,7 +64,7 @@
 				</div>
 			</div>
 
-			<div class="symptoms-card flex col-span rounded px-5 py-3.5 text-sm">
+			<div class="symptoms-card flex col-span rounded px-5 py-3.5 text-sm" data-rank="2">
 				<div class="flex justify-start">
 					{symptomsRank[1]['name']}
 				</div>
@@ -110,7 +114,9 @@
 
 	<!-- divisor for show content behind navbar -->
 	<div class="p-5"></div>
+	
 </div>
+<img class="mountainSvg" src={mountainSvg} alt="" />
 
 <style>
 	.notification-btn {
@@ -147,6 +153,23 @@
 	.symptoms-card:last-child{
 		margin-left: 5px;
 	}
+	.symptoms-card::after {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/* transform: translateY(-100%); */
+		/* transform to top left  */
+		transform: translate(-120%, -120%);
+		font-size: 9px;
+		width:17px;
+		height:17px;
+		content: attr(data-rank);
+		border: 1px solid var(--white-f);
+		border-radius: 50%;
+		background: var(--linear-gold);
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 4px 6px rgba(0, 0, 0, 0.1);
+	}
 
 	.service-card {
 		background: var(--white-75p);
@@ -162,5 +185,14 @@
 		width: 57px;
 		height: 57px;
 		background: var(--linear-2);
+	}
+
+
+	.mountainSvg {
+		position: fixed;
+		bottom: var(--menu-height);
+		width: 100%;
+		height:auto;
+		z-index: -1;
 	}
 </style>
