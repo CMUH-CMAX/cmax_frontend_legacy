@@ -1,6 +1,19 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
+	// set maximum window size to 800x600
+	const app_onload = ( el ) => {
+		el.addEventListener( 'load', () => {
+			// set window size
+			let width = 400,
+					height = 800;
+			let isBrowser = matchMedia("(display-mode: browser)").matches;
+			if (!isBrowser) {
+					window.moveTo(16, 16);
+					window.resizeTo(width, height);
+			}
+		});
+	}
 </script>
 
 <svelte:head>
@@ -35,7 +48,7 @@
 	<link rel="apple-touch-icon" type="image/svg" href="/CMAX_logo.svg">
 </svelte:head>
 
-<div class="app">
+<div class="app" use:app_onload>
 	<Header />
 
 	<main>	

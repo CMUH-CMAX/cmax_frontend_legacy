@@ -34,9 +34,11 @@
 			</div>
 		</div>
 		<div class="col-span-4">
-			<p class="quicksearch-btn p-2 rounded-lg text-center">
-				尋找最適合的中醫及診所
-			</p>
+			<a href="/search">
+				<p class="quicksearch-btn p-2 rounded-lg text-center">
+					尋找最適合的中醫及診所
+				</p>
+			</a>
 		</div>
 	</div>
 
@@ -49,7 +51,11 @@
 
 		<div class="grid grid-cols-4 gap-4 pb-2 white-text text-base">
 			<p class="col-span-3 gap-4 pb-2 white-text">最近常見症狀</p>
-			<p class="text-end">查看更多</p>
+			<p class="text-end">
+				<a href="#">
+					查看更多
+				</a>
+			</p>
 		</div>
 
 		<div class="grid grid-cols-2">
