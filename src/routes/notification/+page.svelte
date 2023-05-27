@@ -43,13 +43,13 @@
 
 <div>
   <div class="headerbar flex items-center">
-    <div class="return px-5 absolute left-0">
+    <div class="return px-5 left-0">
       <a href="/">
         <ChevronLeft/>
       </a>
     </div>
     <div class="flex-1 flex justify-center">通知</div>
-    <div class=" px-5 absolute right-0">全部已讀</div>
+    <div class="readed px-5 right-0">全部已讀</div>
   </div>
   <!-- div grid with one element each row -->
   <div class="grid">

@@ -14,25 +14,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="application-name" content="CMAX">
-	<meta name="apple-mobile-web-app-title" content="CMAX">
+	<meta name="application-name" content="CMAX 中醫地圖">
+	<meta name="apple-mobile-web-app-title" content="CMAX 中醫地圖">
 	<meta name="msapplication-starturl" content="/">
-	<link rel="icon" type="image/png" sizes="128x128" href="/CMAX_logo_darkblue-128.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="128x128" href="/CMAX_logo_darkblue-128.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/CMAX_logo_darkblue-16.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="16x16" href="/CMAX_logo_darkblue-16.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/CMAX_logo_darkblue-32.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="32x32" href="/CMAX_logo_darkblue-32.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="/CMAX_logo_darkblue-64.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="64x64" href="/CMAX_logo_darkblue-64.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/CMAX_logo_darkblue-96.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="96x96" href="/CMAX_logo_darkblue-96.png">
-	<link rel="icon" type="image/png" sizes="256x256" href="/CMAX_logo_darkblue-256.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="256x256" href="/CMAX_logo_darkblue-256.png">
-	<link rel="icon" type="image/png" sizes="512x512" href="/CMAX_logo_darkblue-512.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="512x512" href="/CMAX_logo_darkblue-512.png">
-	<link rel="icon" type="image/svg" href="/CMAX_logo_darkblue.svg">
-	<link rel="apple-touch-icon" type="image/svg" href="/CMAX_logo_darkblue.svg">
+	<link rel="icon" type="image/png" sizes="128x128" href="/CMAX_logo-128.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="128x128" href="/CMAX_logo-128.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/CMAX_logo-16.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="16x16" href="/CMAX_logo-16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/CMAX_logo-32.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="32x32" href="/CMAX_logo-32.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="/CMAX_logo-64.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="64x64" href="/CMAX_logo-64.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/CMAX_logo-96.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="96x96" href="/CMAX_logo-96.png">
+	<link rel="icon" type="image/png" sizes="256x256" href="/CMAX_logo-256.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="256x256" href="/CMAX_logo-256.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="/CMAX_logo-512.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="512x512" href="/CMAX_logo-512.png">
+	<link rel="icon" type="image/svg" href="/CMAX_logo.svg">
+	<link rel="apple-touch-icon" type="image/svg" href="/CMAX_logo.svg">
 </svelte:head>
 
 <div class="app">
