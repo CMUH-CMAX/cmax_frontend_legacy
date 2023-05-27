@@ -1,4 +1,4 @@
-<div class="container flex justify-center items-center p-5 h-screen">
+<div class="flex justify-center items-center p-5 h-screen">
   <div id="search-page" class="bg-teal-800 text-white px-5 py-2">
     <h1>搜尋尚未完成</h1>
   </div>
