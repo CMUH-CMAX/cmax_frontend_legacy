@@ -8,6 +8,9 @@
 
 <p>中醫地圖 CMAX 是一個線上中醫診所地圖，旨在幫助大眾透過演算法尋找合適的中醫診所，希望在中醫分科前就為民眾提供一個簡單快速的分科 APP。</p>
 <p>CMAX 利用獨特的演算法就能將您的症狀分科並推薦至附近的診所或醫院。</p>
+<div align="center">
+  <img width="612" alt="App Screenshot" src="https://github.com/CMUH-CMAX/the_cmax_frontend/assets/20425883/6f2dd869-12f7-4628-a146-a7061f0ad69e">
+</div>
 
 ## Building
 
