@@ -30,7 +30,7 @@
   ]
 </script>
 <svelte:head>
-  <meta name="theme-color" id="theme-color" content="#67BEBE">
+  <meta name="theme-color" id="theme-color" content="#1A5B5B">
   <style>
     body{
       background: #FFFFFF !important;
@@ -80,7 +80,8 @@
 
 <style>
   .headerbar {
-    background: #67BEBE;
+    background: #1A5B5B;
+    color:white;
     height: 64px;
     width: 100%;
   }

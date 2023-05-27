@@ -58,8 +58,10 @@
 				<div class="flex justify-start">
 					{symptomsRank[0]['name']}
 				</div>
-				<div class="flex justify-end mr-0 ml-auto items-center">
-					<Eye variation="outline" size="14" class="eye" />
+				<div class="flex justify-end mr-0 ml-auto items-center visit">
+					<div class="visit-eye">
+						<Eye variation="outline" size="14"/>
+					</div>
 					<span>{symptomsRank[0]['view']}</span>
 				</div>
 			</div>
@@ -68,8 +70,10 @@
 				<div class="flex justify-start">
 					{symptomsRank[1]['name']}
 				</div>
-				<div class="flex justify-end mr-0 ml-auto items-center">
-					<Eye variation="outline" size="14" class="eye" />
+				<div class="flex justify-end mr-0 ml-auto items-center visit">
+					<div class="visit-eye">
+						<Eye variation="outline" size="14"/>
+					</div>
 					<span>{symptomsRank[1]['view']}</span>
 				</div>
 			</div>
@@ -170,6 +174,9 @@
 		background: var(--linear-gold);
 		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 4px 6px rgba(0, 0, 0, 0.1);
 	}
+	.visit > .visit-eye {
+		margin-right: 8px;
+	}
 
 	.service-card {
 		background: var(--white-75p);
@@ -190,6 +197,7 @@
 
 	.mountainSvg {
 		position: fixed;
+		left: 0px;
 		bottom: var(--menu-height);
 		width: 100%;
 		height:auto;

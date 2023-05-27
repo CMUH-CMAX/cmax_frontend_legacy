@@ -30,7 +30,7 @@
 	--radial-1: radial-gradient(50% 50% at 50% 50%, #388E8E 0%, #236A6A 99.99%, #1A5B5B 100%);
 	
 	--linear-1: linear-gradient(225deg, var(--blue-4) 0%, var(--blue-5) 100%);
-	--linear-2: linear-gradient(225deg, var(--blue-2) 0%, var(--blue-3) 100%);
+	--linear-2: linear-gradient(142deg, var(--blue-2) 9.39%, var(--blue-3) 57.6%);
 	--linear-gold: linear-gradient(205.68deg, var(--gold-1) 2.38%, var(--gold-2) 95.92%);
 	--linear-x21: linear-gradient(180deg, var(--blue-4) 5.39%, var(--blue-5) 73.52%);
 

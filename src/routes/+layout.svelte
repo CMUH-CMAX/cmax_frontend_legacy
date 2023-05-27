@@ -58,6 +58,7 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
+		/* align-items: center; */
 		/* padding: 1rem; */
 		width: 100%;
 		height:100%;
