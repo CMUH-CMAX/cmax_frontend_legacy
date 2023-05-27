@@ -14,4 +14,4 @@
 
 ## Building
 
-See [./docs/BUILDING.md] for instructions on how to build CMAX.
+See [BUILDING.md](./docs/BUILDING.md) for instructions on how to build CMAX.
