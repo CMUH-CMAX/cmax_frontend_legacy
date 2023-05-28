@@ -55,7 +55,7 @@
   <div class="grid">
     <!-- for each bulletin -->
     {#each bulletins as bulletin}
-    <div class="p-5 border-b hover:bg-slate-200 cursor-pointer">
+    <div class="notify-card p-5 border-b cursor-pointer">
 
       <div class="flex mb-1">
         <div class="bulletin-{bulletin_type_translate[bulletin.type] || "undefined"} text-white text-sm py-1 px-1.5 rounded-lg">
@@ -84,6 +84,9 @@
     color:white;
     height: 64px;
     width: 100%;
+  }
+  .notify-card:hover {
+    background: var(--blue-1);
   }
   .bulletin-blue {
     background: var(--blue-4);

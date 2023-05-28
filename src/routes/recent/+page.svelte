@@ -75,7 +75,7 @@
   </style>
 </svelte:head>
 
-<div>
+<div class="prevent-select">
 
   <div class="headerbar flex items-center p-5">
     <div class="return left-0 z-10">
@@ -118,8 +118,10 @@
 		background: var(--white-75p);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
+    
 	}
 	.symptoms-card:hover {
+    transform: scale(1.05);
 		background: var(--white-f);
 	}
 	.symptoms-card::after {
@@ -140,6 +142,10 @@
 		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 4px 6px rgba(0, 0, 0, 0.1);
 		transition-duration: 0.1s;
 	}
+  .symptoms-card:active {
+    transform: scale(1);
+    background: var(--blue-1);
+  }
 	.symptoms-card:hover::after {
 		/* scale */
 		transform: translate(-120%, -120%) scale(1.2);
