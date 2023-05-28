@@ -6,7 +6,6 @@
   let symptomsList = {
 
   }
-  $: focusBody( currentBodyFocus );
 
   function returnToDefault() {
     currentBodyFocus = undefined;

@@ -1,4 +1,5 @@
 import { c as create_ssr_component, a as compute_rest_props, b as spread, e as escape_attribute_value, d as escape_object, h as escape, v as validate_component, g as add_attribute } from "../../chunks/index3.js";
+import { E as Eye } from "../../chunks/Eye.js";
 const Bell = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$restProps = compute_rest_props($$props, ["size", "strokeWidth", "color", "variation", "ariaLabel"]);
   let { size = "24" } = $$props;
@@ -67,63 +68,6 @@ const ChatBubbleOvalLeftEllipsis = create_ssr_component(($$result, $$props, $$bi
   let svgoutline = `<path d="M8.625 12C8.625 12.2071 8.45711 12.375 8.25 12.375C8.04289 12.375 7.875 12.2071 7.875 12C7.875 11.7929 8.04289 11.625 8.25 11.625C8.45711 11.625 8.625 11.7929 8.625 12ZM8.625 12H8.25M12.375 12C12.375 12.2071 12.2071 12.375 12 12.375C11.7929 12.375 11.625 12.2071 11.625 12C11.625 11.7929 11.7929 11.625 12 11.625C12.2071 11.625 12.375 11.7929 12.375 12ZM12.375 12H12M16.125 12C16.125 12.2071 15.9571 12.375 15.75 12.375C15.5429 12.375 15.375 12.2071 15.375 12C15.375 11.7929 15.5429 11.625 15.75 11.625C15.9571 11.625 16.125 11.7929 16.125 12ZM16.125 12H15.75M21 12C21 16.5563 16.9706 20.25 12 20.25C11.1125 20.25 10.2551 20.1323 9.44517 19.9129C8.47016 20.5979 7.28201 21 6 21C5.80078 21 5.60376 20.9903 5.40967 20.9713C5.25 20.9558 5.0918 20.9339 4.93579 20.906C5.41932 20.3353 5.76277 19.6427 5.91389 18.8808C6.00454 18.4238 5.7807 17.9799 5.44684 17.6549C3.9297 16.1782 3 14.1886 3 12C3 7.44365 7.02944 3.75 12 3.75C16.9706 3.75 21 7.44365 21 12Z" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round"/> `;
   let svgsolid = `<path fill-rule="evenodd" clip-rule="evenodd" d="M4.80365 21.6442C4.9793 21.6757 5.15732 21.7003 5.33691 21.7178C5.55516 21.7391 5.77647 21.75 6 21.75C7.3153 21.75 8.54447 21.3731 9.58317 20.7213C10.3569 20.9034 11.1668 21 12 21C17.322 21 21.75 17.0307 21.75 12C21.75 6.96934 17.322 3 12 3C6.67799 3 2.25 6.96934 2.25 12C2.25 14.4086 3.2746 16.5871 4.92371 18.1923C5.15571 18.4182 5.20107 18.6196 5.17822 18.7349C5.05254 19.3685 4.76687 19.9451 4.36357 20.4211C4.19016 20.6258 4.13927 20.9075 4.23008 21.1599C4.3209 21.4123 4.5396 21.597 4.80365 21.6442ZM8.25 10.875C7.62868 10.875 7.125 11.3787 7.125 12C7.125 12.6213 7.62868 13.125 8.25 13.125C8.87132 13.125 9.375 12.6213 9.375 12C9.375 11.3787 8.87132 10.875 8.25 10.875ZM10.875 12C10.875 11.3787 11.3787 10.875 12 10.875C12.6213 10.875 13.125 11.3787 13.125 12C13.125 12.6213 12.6213 13.125 12 13.125C11.3787 13.125 10.875 12.6213 10.875 12ZM15.75 10.875C15.1287 10.875 14.625 11.3787 14.625 12C14.625 12.6213 15.1287 13.125 15.75 13.125C16.3713 13.125 16.875 12.6213 16.875 12C16.875 11.3787 16.3713 10.875 15.75 10.875Z" fill="${color}"/> `;
   let { ariaLabel = "chat bubble oval left ellipsis" } = $$props;
-  if ($$props.size === void 0 && $$bindings.size && size !== void 0)
-    $$bindings.size(size);
-  if ($$props.strokeWidth === void 0 && $$bindings.strokeWidth && strokeWidth !== void 0)
-    $$bindings.strokeWidth(strokeWidth);
-  if ($$props.color === void 0 && $$bindings.color && color !== void 0)
-    $$bindings.color(color);
-  if ($$props.variation === void 0 && $$bindings.variation && variation !== void 0)
-    $$bindings.variation(variation);
-  if ($$props.ariaLabel === void 0 && $$bindings.ariaLabel && ariaLabel !== void 0)
-    $$bindings.ariaLabel(ariaLabel);
-  {
-    switch (variation) {
-      case "outline":
-        svgpath = svgoutline;
-        viewBox = "0 0 24 24";
-        break;
-      case "solid":
-        svgpath = svgsolid;
-        viewBox = "0 0 24 24";
-        break;
-      default:
-        svgpath = svgoutline;
-        viewBox = "0 0 24 24";
-    }
-  }
-  return `<svg${spread(
-    [
-      { xmlns: "http://www.w3.org/2000/svg" },
-      { width: escape_attribute_value(size) },
-      { height: escape_attribute_value(size) },
-      {
-        class: escape_attribute_value($$props.class)
-      },
-      escape_object($$restProps),
-      {
-        "aria-label": escape_attribute_value(ariaLabel)
-      },
-      { fill: "none" },
-      { viewBox: escape_attribute_value(viewBox) },
-      {
-        "stroke-width": escape_attribute_value(strokeWidth)
-      }
-    ],
-    {}
-  )}><!-- HTML_TAG_START -->${svgpath}<!-- HTML_TAG_END --></svg>`;
-});
-const Eye = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, ["size", "strokeWidth", "color", "variation", "ariaLabel"]);
-  let { size = "24" } = $$props;
-  let { strokeWidth = "1.5" } = $$props;
-  let { color = "currentColor" } = $$props;
-  let { variation = "outline" } = $$props;
-  let viewBox;
-  let svgpath;
-  let svgoutline = `<path d="M2.03556 12.3224C1.96648 12.1151 1.96642 11.8907 2.03538 11.6834C3.42374 7.50972 7.3608 4.5 12.0008 4.5C16.6387 4.5 20.5742 7.50692 21.9643 11.6776C22.0334 11.8849 22.0335 12.1093 21.9645 12.3166C20.5762 16.4903 16.6391 19.5 11.9991 19.5C7.36121 19.5 3.42565 16.4931 2.03556 12.3224Z" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round"/> <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3432 15 9.00001 13.6569 9.00001 12C9.00001 10.3431 10.3432 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round"/> `;
-  let svgsolid = `<path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" fill="${color}"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.32341 11.4467C2.81066 6.97571 7.02791 3.75 12.0005 3.75C16.9708 3.75 21.1864 6.97271 22.6755 11.4405C22.7959 11.8015 22.796 12.1922 22.6759 12.5533C21.1886 17.0243 16.9714 20.25 11.9988 20.25C7.02847 20.25 2.81284 17.0273 1.32374 12.5595C1.2034 12.1985 1.20328 11.8078 1.32341 11.4467ZM17.25 12C17.25 14.8995 14.8995 17.25 12 17.25C9.1005 17.25 6.75 14.8995 6.75 12C6.75 9.1005 9.1005 6.75 12 6.75C14.8995 6.75 17.25 9.1005 17.25 12Z" fill="${color}"/> `;
-  let { ariaLabel = "eye" } = $$props;
   if ($$props.size === void 0 && $$bindings.size && size !== void 0)
     $$bindings.size(size);
   if ($$props.strokeWidth === void 0 && $$bindings.strokeWidth && strokeWidth !== void 0)
@@ -343,18 +287,28 @@ const Squares2x2 = create_ssr_component(($$result, $$props, $$bindings, slots) =
 });
 const moonAndRabitSvg = "/_app/immutable/assets/Moon_Rabit.a2184e25.svg";
 const cloudSvg = "/_app/immutable/assets/Cloud.0ddee68a.svg";
+const mountainSvg = "/_app/immutable/assets/mountain.f8aa8a1d.svg";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".notification-btn.svelte-114lnlj.svelte-114lnlj{color:var(--blue-3);background:var(--white-f)}.quicksearch-btn.svelte-114lnlj.svelte-114lnlj{color:var(--gray-5);background:var(--white-f)}.signin-slot.svelte-114lnlj>.front-cover.svelte-114lnlj{position:absolute}@keyframes svelte-114lnlj-front-cover{0%{transform:translateX(-150%)}100%{transform:translateX(150%)}}.symptoms-card.svelte-114lnlj.svelte-114lnlj{background:var(--white-75p)}.symptoms-card.svelte-114lnlj.svelte-114lnlj:first-child{margin-right:5px}.symptoms-card.svelte-114lnlj.svelte-114lnlj:last-child{margin-left:5px}.service-card.svelte-114lnlj.svelte-114lnlj{background:var(--white-75p)}.service-items.svelte-114lnlj.svelte-114lnlj{display:flex;flex-direction:column;align-items:center;justify-content:center}.service-icon.svelte-114lnlj.svelte-114lnlj{width:57px;height:57px;background:var(--linear-2)}",
+  code: ".notification-btn.svelte-1u1w537.svelte-1u1w537{color:var(--blue-3);background:var(--white-f);transition-duration:0.1s}.notification-btn.svelte-1u1w537.svelte-1u1w537:hover{color:var(--blue-3);background:var(--white-75p)}.quicksearch-btn.svelte-1u1w537.svelte-1u1w537{color:var(--gray-5);background:var(--white-f);transition-duration:0.1s}.quicksearch-btn.svelte-1u1w537.svelte-1u1w537:hover{color:var(--gray-5);background:var(--white-75p)}.signin-slot.svelte-1u1w537>.front-cover.svelte-1u1w537{position:absolute}@keyframes svelte-1u1w537-front-cover{0%{transform:translateX(-150%)}100%{transform:translateX(150%)}}.symptoms-card.svelte-1u1w537.svelte-1u1w537{cursor:pointer;background:var(--white-75p);transition-duration:0.1s}.symptoms-card.svelte-1u1w537.svelte-1u1w537:hover{background:var(--white-f)}.symptoms-card.svelte-1u1w537.svelte-1u1w537:first-child{margin-right:5px}.symptoms-card.svelte-1u1w537.svelte-1u1w537:last-child{margin-left:5px}.symptoms-card.svelte-1u1w537.svelte-1u1w537::after{position:absolute;display:flex;justify-content:center;align-items:center;transform:translate(-120%, -120%);font-size:9px;width:17px;height:17px;content:attr(data-rank);border:1px solid var(--white-f);border-radius:50%;background:var(--linear-gold);box-shadow:0px 2px 4px rgba(0, 0, 0, 0.05), 0px 4px 6px rgba(0, 0, 0, 0.1);transition-duration:0.1s}.symptoms-card.svelte-1u1w537.svelte-1u1w537:hover::after{transform:translate(-120%, -120%) scale(1.2)}.visit.svelte-1u1w537>.visit-eye.svelte-1u1w537{margin-right:8px}.service-card.svelte-1u1w537.svelte-1u1w537{background:var(--white-75p)}.service-items.svelte-1u1w537.svelte-1u1w537{display:flex;flex-direction:column;align-items:center;justify-content:center;transition-duration:0.1s}.service-items.svelte-1u1w537>.svelte-1u1w537{cursor:pointer}.service-items.svelte-1u1w537.svelte-1u1w537:hover{transform:scale(1.1)}.service-icon.svelte-1u1w537.svelte-1u1w537{width:57px;height:57px;background:var(--linear-2)}.mountainSvg.svelte-1u1w537.svelte-1u1w537{position:fixed;left:0px;bottom:var(--menu-height);width:100%;height:auto;z-index:-1}",
   map: null
 };
 let lastname = "殊橋";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let symptomsRank = [{ name: "發燒", view: 3578 }, { name: "紅疹", view: 1324 }];
+  let symptomsRank = [
+    {
+      name: "發燒",
+      academic: "pyrexia",
+      view: 3578
+    },
+    { name: "紅疹", academic: "rash", view: 1324 }
+  ];
   $$result.css.add(css);
-  return `<div class="main"><div class="top-content content-slot mx-auto grid grid-cols-4 gap-4 content-around p-5"><div class="col-span-3 text-white"><p class="text-xs">Hi，<span class="lastname font-semibold">${escape(lastname)}</span>！</p>
+  return `${$$result.head += `<!-- HEAD_svelte-1h4izzq_START --><meta name="theme-color" id="theme-color" content="#388E8E"><!-- HEAD_svelte-1h4izzq_END -->`, ""}
+
+<div class="main prevent-select"><div class="top-content content-slot mx-auto grid grid-cols-4 gap-4 content-around p-5"><div class="col-span-3 text-white"><p class="text-xs">Hi，<span class="lastname font-semibold">${escape(lastname)}</span>！</p>
 			<p class="text-base">今天過得好嗎？</p></div>
-		<div class="flex justify-end"><div class="notification"><div class="notification-btn rounded-full w-10 h-10 flex justify-center items-center svelte-114lnlj">${validate_component(Bell, "Bell").$$render(
+		<div class="flex justify-end"><div class="notification"><a href="/notification"><div class="notification-btn rounded-full w-10 h-10 flex justify-center items-center svelte-1u1w537">${validate_component(Bell, "Bell").$$render(
     $$result,
     {
       variation: "outline",
@@ -363,58 +317,41 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )}</div></div></div>
-		<div class="col-span-4"><p class="quicksearch-btn p-2 rounded-lg text-center svelte-114lnlj">尋找最適合的中醫及診所
-			</p></div></div>
+  )}</div></a></div></div>
+		<div class="col-span-4"><a href="/search"><p class="quicksearch-btn p-2 rounded-lg text-center svelte-1u1w537">尋找最適合的中醫及診所
+				</p></a></div></div>
 
-	<div class="signin-slot m-5 text-white flex justify-center items-center svelte-114lnlj"><img${add_attribute("src", moonAndRabitSvg, 0)} alt="">
-		<img class="front-cover svelte-114lnlj"${add_attribute("src", cloudSvg, 0)} alt=""></div>
+	<div class="signin-slot m-5 text-white flex justify-center items-center svelte-1u1w537"><img${add_attribute("src", moonAndRabitSvg, 0)} alt="">
+		<img class="front-cover svelte-1u1w537"${add_attribute("src", cloudSvg, 0)} alt=""></div>
 
 	<div class="recent-slot grid m-5"><div class="grid grid-cols-4 gap-4 pb-2 white-text text-base"><p class="col-span-3 gap-4 pb-2 white-text">最近常見症狀</p>
-			<p class="text-end">查看更多</p></div>
+			<p class="text-end"><a href="/recent">查看更多
+				</a></p></div>
 
-		<div class="grid grid-cols-2"><div class="symptoms-card flex col-span rounded px-5 py-3.5 text-sm svelte-114lnlj"><div class="flex justify-start">${escape(symptomsRank[0]["name"])}</div>
-				<div class="flex justify-end mr-0 ml-auto items-center">${validate_component(Eye, "Eye").$$render(
-    $$result,
-    {
-      variation: "outline",
-      size: "14",
-      class: "eye"
-    },
-    {},
-    {}
-  )}
+		<div class="grid grid-cols-2"><div class="symptoms-card flex col-span rounded px-5 py-3.5 text-sm svelte-1u1w537" data-rank="1"><div class="flex justify-start">${escape(symptomsRank[0]["name"])}</div>
+				<div class="flex justify-end mr-0 ml-auto items-center visit svelte-1u1w537"><div class="visit-eye svelte-1u1w537">${validate_component(Eye, "Eye").$$render($$result, { variation: "outline", size: "14" }, {}, {})}</div>
 					<span>${escape(symptomsRank[0]["view"])}</span></div></div>
 
-			<div class="symptoms-card flex col-span rounded px-5 py-3.5 text-sm svelte-114lnlj"><div class="flex justify-start">${escape(symptomsRank[1]["name"])}</div>
-				<div class="flex justify-end mr-0 ml-auto items-center">${validate_component(Eye, "Eye").$$render(
-    $$result,
-    {
-      variation: "outline",
-      size: "14",
-      class: "eye"
-    },
-    {},
-    {}
-  )}
+			<div class="symptoms-card flex col-span rounded px-5 py-3.5 text-sm svelte-1u1w537" data-rank="2"><div class="flex justify-start">${escape(symptomsRank[1]["name"])}</div>
+				<div class="flex justify-end mr-0 ml-auto items-center visit svelte-1u1w537"><div class="visit-eye svelte-1u1w537">${validate_component(Eye, "Eye").$$render($$result, { variation: "outline", size: "14" }, {}, {})}</div>
 					<span>${escape(symptomsRank[1]["view"])}</span></div></div></div></div>
 
-	<div class="service-slot m-5"><span class="text-white">服務</span>
-		<div class="service-card grid grid-cols-4 rounded-lg py-5 mt-2 svelte-114lnlj"><div class="service-items col svelte-114lnlj"><div class="service-icon flex justify-center items-center rounded-full mb-2 svelte-114lnlj">${validate_component(Squares2x2, "Squares2x2").$$render($$result, { color: "white", size: "24" }, {}, {})}</div>
-				<span class="text-sm">症狀分類</span></div>
+	<div class="service-slot m-5 prevent-select"><span class="text-white">服務</span>
+		<div class="service-card grid grid-cols-4 rounded-lg py-5 mt-2 svelte-1u1w537"><div class="service-items col svelte-1u1w537"><div class="service-icon flex justify-center items-center rounded-full mb-2 svelte-1u1w537">${validate_component(Squares2x2, "Squares2x2").$$render($$result, { color: "white", size: "24" }, {}, {})}</div>
+				<span class="text-sm svelte-1u1w537">症狀分類</span></div>
 
-			<div class="service-items col svelte-114lnlj"><div class="service-icon flex justify-center items-center rounded-full mb-2 svelte-114lnlj">${validate_component(FaceSmile, "FaceSmile").$$render($$result, { color: "white", size: "24" }, {}, {})}</div>
-				<span class="text-sm">症狀檢查器</span></div>
+			<div class="service-items col svelte-1u1w537"><div class="service-icon flex justify-center items-center rounded-full mb-2 svelte-1u1w537">${validate_component(FaceSmile, "FaceSmile").$$render($$result, { color: "white", size: "24" }, {}, {})}</div>
+				<span class="text-sm svelte-1u1w537">症狀檢查器</span></div>
 
-			<div class="service-items col svelte-114lnlj"><div class="service-icon flex justify-center items-center rounded-full mb-2 svelte-114lnlj">${validate_component(Map, "Map").$$render($$result, { color: "white", size: "24" }, {}, {})}</div>
-				<span class="text-sm">診所地圖</span></div>
+			<div class="service-items col svelte-1u1w537"><div class="service-icon flex justify-center items-center rounded-full mb-2 svelte-1u1w537">${validate_component(Map, "Map").$$render($$result, { color: "white", size: "24" }, {}, {})}</div>
+				<span class="text-sm svelte-1u1w537">診所地圖</span></div>
 
-			<div class="service-items col svelte-114lnlj"><div class="service-icon flex justify-center items-center rounded-full mb-2 svelte-114lnlj">${validate_component(ChatBubbleOvalLeftEllipsis, "ChatBubbleOvalLeftEllipsis").$$render($$result, { color: "white", size: "24" }, {}, {})}</div>
-				<span class="text-sm">許願池</span></div></div></div>
+			<div class="service-items col svelte-1u1w537"><div class="service-icon flex justify-center items-center rounded-full mb-2 svelte-1u1w537">${validate_component(ChatBubbleOvalLeftEllipsis, "ChatBubbleOvalLeftEllipsis").$$render($$result, { color: "white", size: "24" }, {}, {})}</div>
+				<span class="text-sm svelte-1u1w537">許願池</span></div></div></div>
 
 	
-	<div class="p-5"></div>
-</div>`;
+	<div class="p-5"></div></div>
+<img class="mountainSvg svelte-1u1w537"${add_attribute("src", mountainSvg, 0)} alt="" disbled draggable="false">`;
 });
 export {
   Page as default

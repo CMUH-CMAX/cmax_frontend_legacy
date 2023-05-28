@@ -1,45 +1,10 @@
 <script>
-  // get all the element with class name "navbar-icon"
-  // export { part_of_body }
-  
-  // export let bodyState = {
-  //   head: false,
-  //   chest: false,
-  //   left_arm: false,
-  //   right_arm: false,
-  //   stomach: false,
-  //   symphysis: false,
-  //   left_leg: false,
-  //   right_leg: false,
-  //   left_knee: false,
-  //   right_knee: false,
-  //   left_calves: false,
-  //   right_calves: false,
-  //   left_foot: false,
-  //   right_foot: false,
-  // }
-  // set a current focus target
   export let currentBodyFocus = undefined;
   
   function bodyAction( ){
     let name = this.attributes.name.value
-        // state = this.attributes.state.value,
-        // active = this.attributes.active.value,
-        // passive = this.attributes.passive.value
-    // console.log(name, state, active, passive)
     currentBodyFocus = name
-    // if( state === '1'){
-    //   // turn it to passive
-    //   this.attributes.fill.value = passive
-    //   this.attributes.state.value = '0'
-    //   // bodyState[name] = false
-    // }else{
-    //   // turn it to active
-    //   this.attributes.fill.value = active
-    //   this.attributes.state.value = '1'
-    //   // bodyState[name] = true
-    // }
-    // console.log(bodyState)
+    focusBody( name )
   }
   
 </script>
