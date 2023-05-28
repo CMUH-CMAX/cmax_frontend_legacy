@@ -14,6 +14,9 @@
 	"/search": [
 		"src/routes/search/+page.ts"
 	],
+	"/search/body": [
+		"src/routes/search/body/+page.ts"
+	],
 	"/sverdle": [
 		"src/routes/sverdle/+page.server.ts"
 	],

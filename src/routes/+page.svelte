@@ -19,6 +19,10 @@
 
 </script>
 
+<svelte:head>
+	<meta name="theme-color" id="theme-color" content="#388E8E">
+</svelte:head>
+
 <div class="main prevent-select">
 	<div class="top-content content-slot mx-auto grid grid-cols-4 gap-4 content-around p-5">
 		<div class="col-span-3 text-white">

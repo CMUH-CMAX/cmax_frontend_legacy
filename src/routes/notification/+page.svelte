@@ -42,14 +42,14 @@
 </svelte:head>
 
 <div>
-  <div class="headerbar flex items-center">
-    <div class="return px-5 left-0">
+  <div class="headerbar grid grid-cols-3 p-5 prevent-select">
+    <div class="return">
       <a href="/">
         <ChevronLeft/>
       </a>
     </div>
-    <div class="flex-1 flex justify-center">通知</div>
-    <div class="readed px-5 right-0 cursor-pointer">全部已讀</div>
+    <div class="flex justify-center">通知</div>
+    <div class="readed flex justify-end cursor-pointer">全部已讀</div>
   </div>
   <!-- div grid with one element each row -->
   <div class="grid">
@@ -84,6 +84,12 @@
     color:white;
     height: 64px;
     width: 100%;
+  }
+  .headerbar > .readed:hover {
+    color: var(--blue-1);
+  }
+  .headerbar > .readed:active {
+    color: var(--blue-2);
   }
   .notify-card:hover {
     background: var(--blue-1);

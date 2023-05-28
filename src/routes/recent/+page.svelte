@@ -77,20 +77,23 @@
 
 <div class="prevent-select">
 
-  <div class="headerbar flex items-center p-5">
-    <div class="return left-0 z-10">
+  <div class="headerbar grid grid-cols-3 p-5">
+    <div class="return">
       <a href="/">
         <ChevronLeft/>
       </a>
     </div>
-    <div class="absolute w-screen left-0 flex justify-center z-0">近期常見症狀</div>
+    <div class="flex justify-center">近期常見症狀</div>
   </div>
   <div class="p-5">
 
     {#each recent_symptoms as symptom, i}
     <div class="symptoms-card flex col-span rounded px-5 py-3.5 text-sm border shadow" data-rank="{i+1}">
       <div class="flex justify-start">
-        {symptom.name}
+        <span class="pr-1">
+          {symptom.name}
+        </span>
+        <small>{symptom.academic}</small>
       </div>
       <div class="flex justify-end mr-0 ml-auto items-center visit prevent-select">
         <div class="visit-eye">

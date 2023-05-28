@@ -42,8 +42,10 @@
 		/* put the navbar bottom of the screen and place in the center */
 		position: fixed;
 		bottom: 0;
-		left: 50%;
-		transform: translateX(-50%);
+		left: 0px;
+		/* left: 50%; */
+		/* transform: translateX(-50%); */
+		border-top: 1px solid #DBD6D1;
 		width: 100%;
 		background: var(--white-f);
 	}
