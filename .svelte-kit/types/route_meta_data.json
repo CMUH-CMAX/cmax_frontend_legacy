@@ -8,6 +8,9 @@
 	"/notification": [
 		"src/routes/notification/+page.ts"
 	],
+	"/recent": [
+		"src/routes/recent/+page.ts"
+	],
 	"/search": [
 		"src/routes/search/+page.ts"
 	],

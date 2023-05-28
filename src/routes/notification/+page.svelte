@@ -49,13 +49,13 @@
       </a>
     </div>
     <div class="flex-1 flex justify-center">通知</div>
-    <div class="readed px-5 right-0">全部已讀</div>
+    <div class="readed px-5 right-0 cursor-pointer">全部已讀</div>
   </div>
   <!-- div grid with one element each row -->
   <div class="grid">
     <!-- for each bulletin -->
     {#each bulletins as bulletin}
-    <div class="p-5 border-b">
+    <div class="p-5 border-b hover:bg-slate-200 cursor-pointer">
 
       <div class="flex mb-1">
         <div class="bulletin-{bulletin_type_translate[bulletin.type] || "undefined"} text-white text-sm py-1 px-1.5 rounded-lg">
@@ -80,7 +80,7 @@
 
 <style>
   .headerbar {
-    background: #1A5B5B;
+    background: var(--blue-5);
     color:white;
     height: 64px;
     width: 100%;

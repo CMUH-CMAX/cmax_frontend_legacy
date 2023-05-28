@@ -6,10 +6,12 @@
 	let symptomsRank = [
 		{
 			name: '發燒',
+			academic: 'pyrexia',
 			view: 3578,
 		},
 		{
 			name: '紅疹',
+			academic: 'rash',
 			view: 1324
 		}
 	];
@@ -17,7 +19,7 @@
 
 </script>
 
-<div class="main">
+<div class="main prevent-select">
 	<div class="top-content content-slot mx-auto grid grid-cols-4 gap-4 content-around p-5">
 		<div class="col-span-3 text-white">
 			<p class="text-xs">Hi，<span class="lastname font-semibold">{lastname}</span>！</p>
@@ -52,7 +54,7 @@
 		<div class="grid grid-cols-4 gap-4 pb-2 white-text text-base">
 			<p class="col-span-3 gap-4 pb-2 white-text">最近常見症狀</p>
 			<p class="text-end">
-				<a href="#">
+				<a href="/recent">
 					查看更多
 				</a>
 			</p>
@@ -87,7 +89,7 @@
 		</div>
 	</div>
 
-	<div class="service-slot m-5">
+	<div class="service-slot m-5 prevent-select">
 		<span class="text-white">服務</span>
 		<div class="service-card grid grid-cols-4 rounded-lg py-5 mt-2">
 
@@ -126,16 +128,27 @@
 	<div class="p-5"></div>
 	
 </div>
-<img class="mountainSvg" src={mountainSvg} alt="" />
+<img class="mountainSvg" src={mountainSvg} alt="" disbled draggable="false"/>
 
 <style>
 	.notification-btn {
 		color: var(--blue-3);
 		background: var(--white-f);
+		transition-duration: 0.1s;
+	}
+	.notification-btn:hover {
+		color: var(--blue-3);
+		background: var(--white-75p);
 	}
 	.quicksearch-btn {
 		color: var(--gray-5);
 		background: var(--white-f);
+
+		transition-duration: 0.1s;
+	}
+	.quicksearch-btn:hover {
+		color: var(--gray-5);
+		background: var(--white-75p);
 	}
 
 	.signin-slot > .front-cover {
@@ -155,7 +168,12 @@
 	}
 
 	.symptoms-card {
+		cursor: pointer;
 		background: var(--white-75p);
+		transition-duration: 0.1s;
+	}
+	.symptoms-card:hover {
+		background: var(--white-f);
 	}
 	.symptoms-card:first-child{
 		margin-right: 5px;
@@ -179,6 +197,11 @@
 		border-radius: 50%;
 		background: var(--linear-gold);
 		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 4px 6px rgba(0, 0, 0, 0.1);
+		transition-duration: 0.1s;
+	}
+	.symptoms-card:hover::after {
+		/* scale */
+		transform: translate(-120%, -120%) scale(1.2);
 	}
 	.visit > .visit-eye {
 		margin-right: 8px;
@@ -193,6 +216,14 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		transition-duration: 0.1s;
+	}
+	.service-items > * {
+		cursor: pointer;
+	}
+	.service-items:hover {
+		/* scale */
+		transform: scale(1.1);
 	}
 	.service-icon {
 		width: 57px;
