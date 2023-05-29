@@ -80,7 +80,6 @@ declare module '$env/static/private' {
 	export const PWD: string;
 	export const npm_package_devDependencies_tailwindcss: string;
 	export const npm_package_scripts_preview: string;
-	export const npm_package_devDependencies_svelte_heros_v2: string;
 	export const P9K_SSH: string;
 	export const npm_lifecycle_event: string;
 	export const P9K_TTY: string;
@@ -90,6 +89,7 @@ declare module '$env/static/private' {
 	export const npm_package_scripts_build: string;
 	export const XPC_FLAGS: string;
 	export const npm_package_devDependencies_vitest: string;
+	export const npm_package_dependencies_svelte_heros_v2: string;
 	export const npm_package_devDependencies_eslint_config_prettier: string;
 	export const _CE_M: string;
 	export const XPC_SERVICE_NAME: string;
@@ -207,7 +207,6 @@ declare module '$env/dynamic/private' {
 		PWD: string;
 		npm_package_devDependencies_tailwindcss: string;
 		npm_package_scripts_preview: string;
-		npm_package_devDependencies_svelte_heros_v2: string;
 		P9K_SSH: string;
 		npm_lifecycle_event: string;
 		P9K_TTY: string;
@@ -217,6 +216,7 @@ declare module '$env/dynamic/private' {
 		npm_package_scripts_build: string;
 		XPC_FLAGS: string;
 		npm_package_devDependencies_vitest: string;
+		npm_package_dependencies_svelte_heros_v2: string;
 		npm_package_devDependencies_eslint_config_prettier: string;
 		_CE_M: string;
 		XPC_SERVICE_NAME: string;
