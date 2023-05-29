@@ -36,11 +36,17 @@
     right_knee: [
       28,29,30
     ],
-    left_foot: [
+    left_calves: [
       31,32,33
     ],
-    right_foot: [
+    right_calves: [
       34,35,36
+    ],
+    left_foot: [
+      37,38,39
+    ],
+    right_foot: [
+      39,40,41
     ],
   }
 
