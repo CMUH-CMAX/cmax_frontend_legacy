@@ -50,4 +50,4 @@ There are the structure of CMAX Front-end
 Note:
 - Design -> Page -> Profile rename to [Settings -> Profile]
 
-The Design Assets can put it on [static](./static)
+The Design Assets can put it on [static](/static)
