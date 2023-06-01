@@ -32,8 +32,8 @@ declare module '$env/static/private' {
 	export const TERM_PROGRAM: string;
 	export const npm_package_devDependencies_eslint_plugin_svelte: string;
 	export const NODE: string;
-	export const NVM_CD_FLAGS: string;
 	export const _P9K_TTY: string;
+	export const NVM_CD_FLAGS: string;
 	export const npm_package_devDependencies_prettier_plugin_svelte: string;
 	export const npm_package_devDependencies_typescript: string;
 	export const INIT_CWD: string;
@@ -79,6 +79,7 @@ declare module '$env/static/private' {
 	export const __CFBundleIdentifier: string;
 	export const PWD: string;
 	export const npm_package_devDependencies_tailwindcss: string;
+	export const npm_command: string;
 	export const npm_package_scripts_preview: string;
 	export const P9K_SSH: string;
 	export const npm_lifecycle_event: string;
@@ -91,6 +92,7 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies_vitest: string;
 	export const npm_package_dependencies_svelte_heros_v2: string;
 	export const npm_package_devDependencies_eslint_config_prettier: string;
+	export const npm_config_node_gyp: string;
 	export const _CE_M: string;
 	export const XPC_SERVICE_NAME: string;
 	export const npm_package_version: string;
@@ -159,8 +161,8 @@ declare module '$env/dynamic/private' {
 		TERM_PROGRAM: string;
 		npm_package_devDependencies_eslint_plugin_svelte: string;
 		NODE: string;
-		NVM_CD_FLAGS: string;
 		_P9K_TTY: string;
+		NVM_CD_FLAGS: string;
 		npm_package_devDependencies_prettier_plugin_svelte: string;
 		npm_package_devDependencies_typescript: string;
 		INIT_CWD: string;
@@ -206,6 +208,7 @@ declare module '$env/dynamic/private' {
 		__CFBundleIdentifier: string;
 		PWD: string;
 		npm_package_devDependencies_tailwindcss: string;
+		npm_command: string;
 		npm_package_scripts_preview: string;
 		P9K_SSH: string;
 		npm_lifecycle_event: string;
@@ -218,6 +221,7 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies_vitest: string;
 		npm_package_dependencies_svelte_heros_v2: string;
 		npm_package_devDependencies_eslint_config_prettier: string;
+		npm_config_node_gyp: string;
 		_CE_M: string;
 		XPC_SERVICE_NAME: string;
 		npm_package_version: string;
