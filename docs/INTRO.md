@@ -10,6 +10,7 @@ The Algorithm also are CMAX, named Classification Machine with Accurate eXpectat
 
 CMAX Front end is a web application for CMAX, which is a SPA (Single Page Application) with SveletKit.
 There are the structure of CMAX Front-end
+<img width="1315" alt="CMAX Frontend" src="https://github.com/CMUH-CMAX/the_cmax_frontend/assets/20425883/8b63aaf6-7215-4b7d-9f3f-b6260b4a8011">
 
 - CMAX Front-end
   - Resoruce
