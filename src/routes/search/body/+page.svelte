@@ -89,7 +89,7 @@
 </svelte:head>
 
 <!-- svg -->
-<div>
+<div class="main">
   <div class="headerbar prevent-select border-b flex items-center">
     <div class="flex-none pl-5" on:click={()=>location.href='/'}>
       <ChevronLeft/>
@@ -119,30 +119,30 @@
     </div>
   </div>
   
-  <div class="process fixed bottom-0 border-t">
-    <div class="selection rounded-t-lg {currentBodyFocus === undefined ? 'hide-menu' : 'show-menu'} {menuNotReady ? 'not-ready' : ''}">
-      <div class="selection-header px-5 flex items-center">
-        <ChevronLeft on:click={cancelSelection} class="mx-2"/>
-        <span>{currentBodyFocus === undefined ? '' : currentBodyFocus}</span>
-      </div>
-      {#if currentBodyFocus !== undefined}
-      <div class="selection-body z-0">
-        {#each symptomsList[currentBodyFocus] as symptom}
-          <div class="selection-item p-5 border-b text-base">
-            {symptom}
-          </div>
-        {/each}
-      </div>
-      {/if}
+</div>
+<div class="process bottom-0 border-t">
+  <div class="selection rounded-t-lg {currentBodyFocus === undefined ? 'hide-menu' : 'show-menu'} {menuNotReady ? 'not-ready' : ''}">
+    <div class="selection-header px-5 flex items-center">
+      <ChevronLeft on:click={cancelSelection} class="mx-2"/>
+      <span>{currentBodyFocus === undefined ? '' : currentBodyFocus}</span>
     </div>
-    <div class="next-process p-5 border-t z-10">
-      <div class="grid grid-cols-2 mb-4">
-        <div class="symptoms-selection grid-span-1">已選症狀：0/5</div>
-        <div class="grid-span-1 text-right text-xs">清空症狀</div>
-      </div>
-      <div class="next-step text-center p-2 rounded-lg">
-        下一步
-      </div>
+    {#if currentBodyFocus !== undefined}
+    <div class="selection-body z-0">
+      {#each symptomsList[currentBodyFocus] as symptom}
+        <div class="selection-item p-5 border-b text-base">
+          {symptom}
+        </div>
+      {/each}
+    </div>
+    {/if}
+  </div>
+  <div class="next-process p-5 border-t z-10">
+    <div class="grid grid-cols-2 mb-4">
+      <div class="symptoms-selection grid-span-1">已選症狀：0/5</div>
+      <div class="grid-span-1 text-right text-xs">清空症狀</div>
+    </div>
+    <div class="next-step text-center p-2 rounded-lg">
+      下一步
     </div>
   </div>
 </div>
@@ -180,11 +180,22 @@
     padding-bottom: 10px;
   }
   .process {
+    margin-top: -160px;
+    height:130px;
     background: var(--white-f);
     width: 100%;
   }
+  .selection-item, .selection {
+    background: var(--white-f);
+  }
   .not-ready {
     display:none;
+  }
+  .process > .show-menu {
+    margin-top: -300px;
+  }
+  .process > .hide-menu {
+    margin-top: 0px;
   }
   .hide-menu {
     position: relative;
@@ -251,5 +262,8 @@
     color: var(--white-f);
     background: var(--gray-2);
   }
-
+  .main {
+    height: 100vh;
+    overflow: hidden;
+  }
 </style>
