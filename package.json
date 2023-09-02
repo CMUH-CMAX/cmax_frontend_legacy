@@ -38,6 +38,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"svelte-heros-v2": "^0.5.1"
+		"svelte-heros-v2": "^0.5.1",
+		"svelte-routing": "^2.2.0"
 	}
 }

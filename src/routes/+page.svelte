@@ -54,6 +54,7 @@
 		}
 	}
 	.app, main{
+		margin: 0px !important;
 		background: white !important;
 	}
 </style>

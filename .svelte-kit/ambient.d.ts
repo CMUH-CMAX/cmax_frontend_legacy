@@ -124,6 +124,7 @@ declare module '$env/static/private' {
 	export const npm_package_scripts_check: string;
 	export const COLORTERM: string;
 	export const npm_package_scripts_test_unit: string;
+	export const npm_package_dependencies_svelte_routing: string;
 	export const npm_node_execpath: string;
 	export const NODE_ENV: string;
 }
@@ -253,6 +254,7 @@ declare module '$env/dynamic/private' {
 		npm_package_scripts_check: string;
 		COLORTERM: string;
 		npm_package_scripts_test_unit: string;
+		npm_package_dependencies_svelte_routing: string;
 		npm_node_execpath: string;
 		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
