@@ -1,5 +1,5 @@
 <script>
-	import CMAXLogo from '$lib/assets/CMAX_Logo.svg';
+	import CMAXLogo from '$lib/assets/CMAX_logo.svg';
 	// .boxie animation listener
 	// body onload
 	import { onMount } from 'svelte';
