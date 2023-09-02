@@ -5,6 +5,9 @@
 	"/about": [
 		"src/routes/about/+page.ts"
 	],
+	"/auth": [],
+	"/auth/forget-password": [],
+	"/home": [],
 	"/notification": [
 		"src/routes/notification/+page.ts"
 	],

@@ -4,7 +4,7 @@
   import HumanSvg, { focusBody } from './CMAX-Human.svelte'
 	import { onMount } from 'svelte';
   let menuNotReady = true;
-  let currentBodyFocus;
+  let currentBodyFocus = undefined;
   let symptomsList = {
     head: [
       1,2,3,4,5,6,7,8,9,0
@@ -91,7 +91,7 @@
 <!-- svg -->
 <div class="main">
   <div class="headerbar prevent-select border-b flex items-center">
-    <div class="flex-none pl-5" on:click={()=>location.href='/'}>
+    <div class="flex-none pl-5" on:click={()=>location.href='/home'}>
       <ChevronLeft/>
     </div>
     <div class="relative flex-1 w-max mx-5">

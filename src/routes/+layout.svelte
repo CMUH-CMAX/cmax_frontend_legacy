@@ -20,8 +20,9 @@
 	<!-- Google fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
-	<!-- Google fonts end -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet"> 	<!-- Google fonts end -->
 	<title>CMAX 中醫地圖</title>
 	<link rel="manifest" href="/manifest.json">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
@@ -62,6 +63,9 @@
 </div>
 
 <style>
+	* {
+		font-family: 'Noto Sans TC', sans-serif;
+	}
 	.app {
 		display: flex;
 		flex-direction: column;
