@@ -1,29 +1,32 @@
 <script>
 	import { page } from '$app/stores';
 	import { Home, MagnifyingGlass, User } from 'svelte-heros-v2';
+	let homeLink = '/home';
+	let searchLink = '/search';
+	let aboutLink = '/about';
 </script>
 
 <header>
 	<nav id="menu">
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/" class="feature-link {$page.url.pathname === '/' ? 'activate' : ''}">
+				<a href="{homeLink}" class="feature-link {$page.url.pathname === homeLink ? 'activate' : ''}">
 					<div class="navbar-icon">
 						<Home variation="solid" size="32" />
 					</div>
 					<span>首頁</span>
 				</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/search' ? 'page' : undefined}>
-				<a href="/search" class="feature-link {$page.url.pathname === '/search' ? 'activate' : ''}">
+			<li aria-current={$page.url.pathname === searchLink ? 'page' : undefined}>
+				<a href="{searchLink}" class="feature-link {$page.url.pathname === searchLink ? 'activate' : ''}">
 					<div class="navbar-icon">
 						<MagnifyingGlass variation="solid" size="32" />
 					</div>
 					<span>搜尋</span>
 				</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about" class="feature-link {$page.url.pathname === '/about' ? 'activate' : ''}">
+			<li aria-current={$page.url.pathname === aboutLink ? 'page' : undefined}>
+				<a href="{aboutLink}" class="feature-link {$page.url.pathname === aboutLink ? 'activate' : ''}">
 					<div class="navbar-icon">
 						<User variation="outline" size="32" />
 					</div>

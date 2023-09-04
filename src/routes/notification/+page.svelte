@@ -44,7 +44,7 @@
 <div>
   <div class="headerbar grid grid-cols-3 p-5 prevent-select">
     <div class="return">
-      <a href="/">
+      <a href="/home">
         <ChevronLeft/>
       </a>
     </div>
