@@ -5,7 +5,7 @@
     window.history.back();
   }
 
-  
+   
 
 
   let bulletins = [
